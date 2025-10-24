@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Featured Graphics - FOLA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background: #f5f5f5;
+        }
+        
+        .graphics-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .graphic-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .graphic-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .coaching-graphic {
+            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .speaking-graphic {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            color: #1a1a1a;
+            border: 2px solid #1a1a1a;
+            text-align: center;
+        }
+        
+        .articles-graphic {
+            background: linear-gradient(135deg, #1a1a1a 0%, #444 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .community-graphic {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            color: #1a1a1a;
+            border: 2px solid #1a1a1a;
+            text-align: center;
+        }
+        
+        .graphic-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+        }
+        
+        .graphic-subtitle {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            opacity: 0.8;
+        }
+        
+        .graphic-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+        
+        .graphic-cta {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+        
+        .coaching-graphic .graphic-cta {
+            background: white;
+            color: #1a1a1a;
+        }
+        
+        .speaking-graphic .graphic-cta {
+            background: #1a1a1a;
+            color: white;
+        }
+        
+        .articles-graphic .graphic-cta {
+            background: white;
+            color: #1a1a1a;
+        }
+        
+        .community-graphic .graphic-cta {
+            background: #1a1a1a;
+            color: white;
+        }
+        
+        .graphic-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 0;
+            padding: 1rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .stats-item {
+            text-align: center;
+        }
+        
+        .stats-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: block;
+        }
+        
+        .stats-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .speaking-graphic .stats,
+        .community-graphic .stats {
+            border-top: 1px solid rgba(26, 26, 26, 0.2);
+        }
+        
+        .features-list {
+            text-align: left;
+            margin: 1.5rem 0;
+        }
+        
+        .features-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .features-list li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .features-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: 600;
+        }
+        
+        .coaching-graphic .features-list li::before,
+        .articles-graphic .features-list li::before {
+            color: white;
+        }
+        
+        .speaking-graphic .features-list li::before,
+        .community-graphic .features-list li::before {
+            color: #1a1a1a;
+        }
+        
+        @media (max-width: 768px) {
+            .graphics-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 10px;
+            }
+            
+            .graphic-card {
+                padding: 20px;
+            }
+            
+            .graphic-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="graphics-container">
+        <!-- Coaching Graphic -->
+        <div class="graphic-card coaching-graphic">
+            <h2 class="graphic-title">Executive Coaching</h2>
+            <p class="graphic-subtitle">Transform Your Leadership</p>
+            <p class="graphic-description">
+                Strategic leadership development for C-suite executives and senior leaders. 
+                Build unshakeable confidence and make decisions that move markets.
+            </p>
+            <div class="features-list">
+                <ul>
+                    <li>Personalized Leadership Assessment</li>
+                    <li>Strategic Thinking Enhancement</li>
+                    <li>Decision-Making Frameworks</li>
+                    <li>Team Building & Management</li>
+                </ul>
+            </div>
+            <div class="stats">
+                <div class="stats-item">
+                    <span class="stats-number">$500</span>
+                    <span class="stats-label">Per Hour</span>
+                </div>
+                <div class="stats-item">
+                    <span class="stats-number">50+</span>
+                    <span class="stats-label">Executives</span>
+                </div>
+                <div class="stats-item">
+                    <span class="stats-number">95%</span>
+                    <span class="stats-label">Success Rate</span>
+                </div>
+            </div>
+            <a href="#" class="graphic-cta">Book Coaching Session</a>
+        </div>
+        
+        <!-- Speaking Graphic -->
+        <div class="graphic-card speaking-graphic">
+            <h2 class="graphic-title">Speaking & Workshops</h2>
+            <p class="graphic-subtitle">Invite Me to Your Event</p>
+            <p class="graphic-description">
+                Keynote presentations on strategic leadership, brand positioning, and the psychology of influence. 
+                Custom talks designed for your audience and objectives.
+            </p>
+            <div class="features-list">
+                <ul>
+                    <li>Strategic Leadership in Digital Age</li>
+                    <li>Building Personal Brand Authority</li>
+                    <li>The Psychology of Influence</li>
+                    <li>Future-Proofing Your Career</li>
+                </ul>
+            </div>
+            <div class="stats">
+                <div class="stats-item">
+                    <span class="stats-number">100+</span>
+                    <span class="stats-label">Events</span>
+                </div>
+                <div class="stats-item">
+                    <span class="stats-number">50K+</span>
+                    <span class="stats-label">Audience</span>
+                </div>
+                <div class="stats-item">
+                    <span class="stats-number">4.9</span>
+                    <span class="stats-label">Rating</span>
+                </div>
+            </div>
+            <a href="#" class="graphic-cta">Invite Me to Speak</a>
+        </div>
+        
+        <!-- Articles Graphic -->
+        <div class="graphic-card articles-graphic">
+            <h2 class="graphic-title">Weekly Newsletter</h2>
+            <p class="graphic-subtitle">Strategic Insights Delivered</p>
+            <p class="graphic-description">
+                Get exclusive insights, case studies, and actionable strategies delivered to your inbox every week. 
+                Join leaders who never miss an insight.
+            </p>
+            <div class="features-list">
+                <ul>
+                    <li>Leadership & Strategy Insights</li>
+                    <li>Real-World Case Studies</li>
+                    <li>Actionable Frameworks</li>
+                    <li>Industry Trend Analysis</li>
+                </ul>
+            </div>
+            <div class="stats">
+                <div class="stats-item">
+                    <span class="stats-number">2.5K+</span>
+                    <span class="stats-label">Subscribers</span>
+                </div>
+                <div class="stats-item">
+                    <span class="stats-number">40%</span>
+                    <span class="stats-label">Open Rate</span>
+                </div>
+                <div class="stats-item">
+                    <span class="stats-number">Weekly</span>
+                    <span class="stats-label">Delivery</span>
+                </div>
+            </div>
+            <a href="#" class="graphic-cta">Subscribe Now</a>
+        </div>
+        
+        <!-- Community Graphic -->
+        <div class="graphic-card community-graphic">
+            <h2 class="graphic-title">Leadership Circle</h2>
+            <p class="graphic-subtitle">Exclusive Community Access</p>
+            <p class="graphic-description">
+                Join an exclusive community of senior executives and business leaders focused on strategic growth 
+                and personal development.
+            </p>
+            <div class="features-list">
+                <ul>
+                    <li>Monthly Mastermind Sessions</li>
+                    <li>Peer Networking Opportunities</li>
+                    <li>Exclusive Content & Resources</li>
+                    <li>Direct Access to Fola</li>
+                </ul>
+            </div>
+            <div class="stats">
+                <div class="stats-item">
+                    <span class="stats-number">200+</span>
+                    <span class="stats-label">Members</span>
+                </div>
+                <div class="stats-item">
+                    <span class="stats-number">Monthly</span>
+                    <span class="stats-label">Sessions</span>
+                </div>
+                <div class="stats-item">
+                    <span class="stats-number">Premium</span>
+                    <span class="stats-label">Access</span>
+                </div>
+            </div>
+            <a href="#" class="graphic-cta">Join Community</a>
+        </div>
+    </div>
+</body>
+</html>

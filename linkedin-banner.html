@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Banner - FOLA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .banner {
+            width: 1584px;
+            height: 396px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            overflow: hidden;
+        }
+        
+        .banner-content {
+            text-align: center;
+            z-index: 2;
+            position: relative;
+        }
+        
+        .banner-title {
+            font-size: 4rem;
+            font-weight: 800;
+            margin: 0;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+        
+        .banner-subtitle {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin: 0;
+            opacity: 0.9;
+            letter-spacing: 0.05em;
+        }
+        
+        .banner-accent {
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .banner-accent-2 {
+            position: absolute;
+            bottom: -100px;
+            left: -100px;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        @media (max-width: 1600px) {
+            .banner {
+                width: 100%;
+                height: 250px;
+            }
+            
+            .banner-title {
+                font-size: 2.5rem;
+            }
+            
+            .banner-subtitle {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-accent"></div>
+        <div class="banner-accent-2"></div>
+        <div class="banner-content">
+            <h1 class="banner-title">FOLA</h1>
+            <p class="banner-subtitle">Brand Strategy • Leadership Development • Personal Growth</p>
+        </div>
+    </div>
+</body>
+</html>
