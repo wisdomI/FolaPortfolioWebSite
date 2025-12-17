@@ -9,15 +9,17 @@ export default {
     extend: {
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
+        'playfair': ['"Playfair Display"', 'serif'],
       },
       colors: {
-        'primary': '#1a1a1a',
+        'primary': '#602E91', // Purple
         'primary-dark': '#ffffff',
-        'secondary': '#ffffff',
-        'secondary-dark': '#1a1a1a',
-        'accent': '#666666',
-        'accent-dark': '#a3a3a3',
-        'light-gray': '#f8f9fa',
+        'primary-light': '#C084FC', // Light Purple for dark mode text
+        'secondary': '#E5058C', // Pink
+        'secondary-dark': '#ff69b4',
+        'accent': '#E5058C', // Pink for accents
+        'accent-dark': '#ff9de2',
+        'light-gray': '#f8f5fa', // Slight purple tint
         'light-gray-dark': '#1f1f1f',
         'border-gray': '#e5e5e5',
         'border-gray-dark': '#404040',
