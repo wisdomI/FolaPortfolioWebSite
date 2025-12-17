@@ -50,14 +50,14 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
         </p>
 
         {/* Service Navigation */}
-        <div className="flex justify-center gap-2 sm:gap-3 md:gap-4 mb-12 md:mb-16 flex-wrap px-4">
-          <a href="#coaching" className="px-4 sm:px-6 py-2 sm:py-3 bg-light-gray dark:bg-light-gray-dark text-primary dark:text-primary-light rounded-lg hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 font-semibold text-sm sm:text-base flex items-center gap-2 border border-primary/20 font-playfair">
+          <div className="flex justify-center gap-2 sm:gap-3 md:gap-4 mb-12 md:mb-16 flex-wrap px-4">
+          <a href="#coaching" className="px-4 sm:px-6 py-2 sm:py-3 bg-light-gray dark:bg-light-gray-dark text-primary dark:text-primary-light rounded-lg hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 font-semibold text-sm sm:text-base flex items-center gap-2 border border-gray-200 font-playfair">
             <BriefcaseIcon className="w-5 h-5" /> Coaching
           </a>
-          <a href="#speaking" className="px-4 sm:px-6 py-2 sm:py-3 bg-light-gray dark:bg-light-gray-dark text-primary dark:text-primary-light rounded-lg hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 font-semibold text-sm sm:text-base flex items-center gap-2 border border-primary/20 font-playfair">
+          <a href="#speaking" className="px-4 sm:px-6 py-2 sm:py-3 bg-light-gray dark:bg-light-gray-dark text-primary dark:text-primary-light rounded-lg hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 font-semibold text-sm sm:text-base flex items-center gap-2 border border-gray-200 font-playfair">
             <MicrophoneIcon className="w-5 h-5" /> Speaking
           </a>
-          <a href="#workshops" className="px-4 sm:px-6 py-2 sm:py-3 bg-light-gray dark:bg-light-gray-dark text-primary dark:text-primary-light rounded-lg hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 font-semibold text-sm sm:text-base flex items-center gap-2 border border-primary/20 font-playfair">
+          <a href="#workshops" className="px-4 sm:px-6 py-2 sm:py-3 bg-light-gray dark:bg-light-gray-dark text-primary dark:text-primary-light rounded-lg hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 font-semibold text-sm sm:text-base flex items-center gap-2 border border-gray-200 font-playfair">
             <UsersIcon className="w-5 h-5" /> Workshops
           </a>
         </div>
@@ -98,7 +98,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
         <div className="mb-12 md:mb-16">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary dark:text-primary-light mb-6 md:mb-8 text-center px-4">Coaching Packages</h2>
           <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-            <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:-translate-y-1">
+            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:-translate-y-1">
               <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">Single Session</h3>
               <p className="text-4xl font-bold text-primary dark:text-primary-light mb-4">$250</p>
               <p className="text-gray-600 dark:text-gray-300 mb-6">Perfect for specific challenges or quick guidance.</p>
@@ -130,7 +130,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
               </button>
             </div>
 
-            <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:-translate-y-1">
+            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:-translate-y-1">
               <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">6-Month Program</h3>
               <p className="text-4xl font-bold text-primary dark:text-primary-light mb-4">$3,200</p>
               <p className="text-gray-600 dark:text-gray-300 mb-6">Deep transformation with lasting impact.</p>
@@ -148,7 +148,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
         </div>
 
         {/* CTA */}
-        <div className="bg-primary dark:bg-surface-dark text-white dark:text-primary-dark rounded-2xl p-12 text-center shadow-lg">
+        <div className="bg-gray-900 dark:bg-surface-dark text-white dark:text-primary-dark rounded-2xl p-12 text-center shadow-lg">
           <h2 className="text-3xl font-bold mb-4">Ready to Unlock Your Growth?</h2>
           <p className="text-lg mb-6 opacity-90">Book your coaching session today and start your transformation journey.</p>
           <button className="bg-white dark:bg-primary text-primary dark:text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 shadow-md font-playfair">
@@ -174,19 +174,19 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-primary dark:text-primary-light mb-8 text-center">Popular Speaking Topics</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-light-gray dark:bg-light-gray-dark rounded-lg p-6 hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 border border-primary/10">
+            <div className="bg-light-gray dark:bg-light-gray-dark rounded-lg p-6 text-gray-900 dark:text-white hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 border border-gray-200 dark:border-border-gray-dark">
               <h4 className="text-xl font-semibold mb-2">🚀 Don't Limit Yourself: Breaking Through Career Ceilings</h4>
               <p className="text-sm opacity-80">Strategies for women in tech to overcome barriers and accelerate growth.</p>
             </div>
-            <div className="bg-light-gray dark:bg-light-gray-dark rounded-lg p-6 hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 border border-primary/10">
+            <div className="bg-light-gray dark:bg-light-gray-dark rounded-lg p-6 text-gray-900 dark:text-white hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 border border-gray-200 dark:border-border-gray-dark">
               <h4 className="text-xl font-semibold mb-2">💼 Leadership in the Digital Age</h4>
               <p className="text-sm opacity-80">How to lead effectively in tech-driven, ever-changing environments.</p>
             </div>
-            <div className="bg-light-gray dark:bg-light-gray-dark rounded-lg p-6 hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 border border-primary/10">
+            <div className="bg-light-gray dark:bg-light-gray-dark rounded-lg p-6 text-gray-900 dark:text-white hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 border border-gray-200 dark:border-border-gray-dark">
               <h4 className="text-xl font-semibold mb-2">🌟 Building a Personal Brand That Opens Doors</h4>
               <p className="text-sm opacity-80">The art of positioning yourself as a leader and influencer in your industry.</p>
             </div>
-            <div className="bg-light-gray dark:bg-light-gray-dark rounded-lg p-6 hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 border border-primary/10">
+            <div className="bg-light-gray dark:bg-light-gray-dark rounded-lg p-6 text-gray-900 dark:text-white hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 border border-gray-200 dark:border-border-gray-dark">
               <h4 className="text-xl font-semibold mb-2">💪 Confidence & Career Growth for Women in Tech</h4>
               <p className="text-sm opacity-80">Practical strategies to build confidence and navigate male-dominated spaces.</p>
             </div>
@@ -194,7 +194,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
         </div>
 
         {/* Speaking Experience */}
-        <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-2xl p-12 mb-16 shadow-sm">
+        <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-2xl p-12 mb-16 shadow-sm">
           <h2 className="text-3xl font-bold text-primary dark:text-primary-light mb-8 text-center">Speaking Experience</h2>
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
@@ -213,7 +213,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
         </div>
 
         {/* Invite Form */}
-        <div className="bg-gradient-to-r from-light-gray to-white dark:from-light-gray-dark dark:to-surface-dark rounded-2xl p-12 border border-primary/10">
+        <div className="bg-gradient-to-r from-light-gray to-white dark:from-light-gray-dark dark:to-surface-dark rounded-2xl p-12 border border-gray-200">
           <h2 className="text-3xl font-bold text-primary dark:text-primary-light mb-6 text-center">Invite Me to Speak at Your Event</h2>
           <form className="max-w-2xl mx-auto">
             <div className="grid md:grid-cols-2 gap-4 mb-4">
@@ -266,7 +266,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-primary dark:text-primary-light mb-8 text-center">Available Workshops</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300">
+            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300">
               <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">👥 Leadership Fundamentals for Women in Tech</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">A 4-hour intensive workshop covering leadership essentials, confidence building, and strategic thinking.</p>
               <ul className="list-none mb-6 space-y-2">
@@ -281,7 +281,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
               </button>
             </div>
 
-            <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300">
+            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300">
               <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">🎯 Building Your Personal Brand</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">Half-day workshop on creating a powerful personal brand that attracts opportunities.</p>
               <ul className="list-none mb-6 space-y-2">
@@ -296,7 +296,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
               </button>
             </div>
 
-            <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300">
+            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300">
               <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">💪 Confidence & Communication Masterclass</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">Full-day intensive on building confidence, effective communication, and executive presence.</p>
               <ul className="list-none mb-6 space-y-2">
@@ -311,7 +311,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
               </button>
             </div>
 
-            <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300">
+            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300">
               <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">🚀 Career Acceleration for Tech Professionals</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">Strategic workshop on navigating career growth, promotions, and transitions in tech.</p>
               <ul className="list-none mb-6 space-y-2">
@@ -328,8 +328,8 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
           </div>
         </div>
 
-        {/* Custom Workshops */}
-        <div className="bg-primary dark:bg-surface-dark text-white dark:text-primary-dark rounded-2xl p-12 text-center shadow-lg">
+          {/* Custom Workshops */}
+          <div className="bg-gray-900 dark:bg-surface-dark text-white dark:text-primary-dark rounded-2xl p-12 text-center shadow-lg">
           <h2 className="text-3xl font-bold mb-4">Need a Custom Workshop?</h2>
           <p className="text-lg mb-6 opacity-90">I can design a tailored workshop for your team's specific needs and goals.</p>
           <button onClick={() => setActiveSection('contact')} className="bg-white dark:bg-primary text-primary dark:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 text-sm sm:text-base w-full sm:w-auto shadow-md font-playfair">

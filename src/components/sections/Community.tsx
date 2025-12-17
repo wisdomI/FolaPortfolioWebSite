@@ -19,10 +19,10 @@ const Community: React.FC = () => {
         </p>
 
         {/* Community Intro */}
-        <div className="relative bg-primary dark:bg-surface-dark rounded-2xl p-12 mb-16 text-center overflow-hidden shadow-lg">
+        <div className="relative bg-gray-900 dark:bg-surface-dark rounded-2xl p-12 mb-16 text-center overflow-hidden shadow-lg">
           <div className="absolute inset-0 z-0">
             <Image src="/pictures/OGM07879.jpg" alt="Community Background" className="w-full h-full object-cover object-center opacity-20" loading="lazy" />
-            <div className="absolute inset-0 bg-primary/80 dark:bg-surface-dark/90"></div>
+            <div className="absolute inset-0 bg-black/80 dark:bg-surface-dark/90"></div>
           </div>
           <div className="relative z-10">
             <h2 className="text-3xl font-bold text-white mb-6">Why Join Our Community?</h2>
@@ -51,7 +51,7 @@ const Community: React.FC = () => {
 
         {/* Community Options */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300">
+          <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300">
             <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4 flex items-center gap-2"><SparklesIcon className="w-6 h-6 text-secondary" /> Free Community (LinkedIn)</h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
               Follow me on LinkedIn for daily insights, discussions, and connection with our growing community of professionals.
@@ -87,7 +87,7 @@ const Community: React.FC = () => {
         </div>
 
         {/* CTA */}
-        <div className="bg-primary dark:bg-surface-dark text-white dark:text-primary-dark rounded-2xl p-12 text-center shadow-lg">
+        <div className="bg-gray-900 dark:bg-surface-dark text-white dark:text-primary-dark rounded-2xl p-12 text-center shadow-lg">
           <h2 className="text-3xl font-bold mb-4">Ready to Connect & Grow?</h2>
           <p className="text-lg mb-6 opacity-90">Join our community and be part of something bigger.</p>
           <button className="bg-white dark:bg-primary text-primary dark:text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 shadow-md font-playfair">

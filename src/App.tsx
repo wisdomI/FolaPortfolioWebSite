@@ -66,7 +66,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col w-full max-w-full bg-background dark:bg-background-dark transition-colors duration-300 font-inter">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 w-full bg-white/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-primary/10 dark:border-white/10 z-50 transition-all duration-300 shadow-sm">
+      <nav className="fixed top-0 left-0 right-0 w-full bg-white/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-gray-200 dark:border-white/10 z-50 transition-all duration-300 shadow-sm">
         <div className="max-w-container mx-auto flex justify-between items-center px-8 md:px-16 w-full">
           <div className="nav-brand">
             <Image src="/logos/starrup.png" alt="logo-image" className="h-24 w-auto object-contain animate-fade-in" loading="lazy" />
@@ -171,7 +171,7 @@ function App() {
       </main>
 
       {/* FOOTER - CONSISTENTLY BLACK */}
-      <footer className="bg-primary text-white py-12 mt-auto w-full max-w-full">
+      <footer className="bg-gray-900 text-white py-12 mt-auto w-full max-w-full">
         <div className="max-w-container mx-auto w-full px-8 md:px-16">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>

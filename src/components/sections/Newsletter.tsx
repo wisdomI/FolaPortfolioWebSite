@@ -17,7 +17,7 @@ const Newsletter: React.FC = () => {
         </p>
 
         {/* Newsletter Signup */}
-        <div className="relative bg-primary dark:bg-surface-dark rounded-2xl p-12 mb-16 text-center overflow-hidden shadow-lg">
+        <div className="relative bg-gray-900 dark:bg-surface-dark rounded-2xl p-12 mb-16 text-center overflow-hidden shadow-lg">
           <div className="absolute inset-0 z-0">
             <Image src="/pictures/OGM07924.jpg" alt="Newsletter Background" className="w-full h-full object-cover object-center opacity-20" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-purple-900/90 dark:from-surface-dark/90 dark:to-black/90"></div>
@@ -43,7 +43,7 @@ const Newsletter: React.FC = () => {
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-primary dark:text-primary-light mb-8">Recent Articles</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
+            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
               <div className="text-sm text-accent dark:text-accent-dark mb-2">Jan 2025</div>
               <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">Don't Limit Yourself: Breaking Through Career Ceilings</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
@@ -54,7 +54,7 @@ const Newsletter: React.FC = () => {
               </button>
             </div>
 
-            <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
+            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
               <div className="text-sm text-accent dark:text-accent-dark mb-2">Dec 2024</div>
               <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">The Confidence Code for Women in Tech</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
@@ -65,7 +65,7 @@ const Newsletter: React.FC = () => {
               </button>
             </div>
 
-            <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
+            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
               <div className="text-sm text-accent dark:text-accent-dark mb-2">Nov 2024</div>
               <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">Leadership Lessons from Imposter Syndrome</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
@@ -76,7 +76,7 @@ const Newsletter: React.FC = () => {
               </button>
             </div>
 
-            <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
+            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
               <div className="text-sm text-accent dark:text-accent-dark mb-2">Oct 2024</div>
               <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">Personal Branding for Tech Professionals</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
@@ -90,7 +90,7 @@ const Newsletter: React.FC = () => {
         </div>
 
         {/* What You'll Get */}
-        <div className="bg-light-gray dark:bg-light-gray-dark rounded-2xl p-12 border border-primary/10">
+        <div className="bg-light-gray dark:bg-light-gray-dark rounded-2xl p-12 border border-gray-200">
           <h2 className="text-3xl font-bold text-primary dark:text-primary-light mb-8 text-center">What You'll Get in the Newsletter</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">

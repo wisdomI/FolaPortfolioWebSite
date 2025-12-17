@@ -19,7 +19,7 @@ export default {
         'secondary-dark': '#ff69b4',
         'accent': '#E5058C', // Pink for accents
         'accent-dark': '#ff9de2',
-        'light-gray': '#f8f5fa', // Slight purple tint
+        'light-gray': '#f9fafb', // Neutral gray (Gray 50)
         'light-gray-dark': '#1f1f1f',
         'border-gray': '#e5e5e5',
         'border-gray-dark': '#404040',

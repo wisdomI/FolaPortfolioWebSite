@@ -19,7 +19,7 @@ const Contact: React.FC<ContactProps> = ({ setActiveSection }) => {
 
         <div className="grid md:grid-cols-2 gap-12 mb-16">
           {/* Contact Form */}
-          <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-2xl p-8 shadow-sm">
+          <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-2xl p-8 shadow-sm">
             <h2 className="text-2xl font-bold text-primary dark:text-primary-light mb-6">Send Me a Message</h2>
             <form>
               <div className="mb-4">
@@ -27,7 +27,7 @@ const Contact: React.FC<ContactProps> = ({ setActiveSection }) => {
                 <input 
                   type="text" 
                   placeholder="Your name" 
-                  className="w-full px-4 py-3 bg-white dark:bg-background-dark border border-primary/20 dark:border-border-gray-dark text-gray-900 dark:text-white placeholder-gray-400 rounded-md text-base focus:ring-1 focus:ring-primary focus:border-primary outline-none"
+                  className="w-full px-4 py-3 bg-white dark:bg-background-dark border border-gray-200 dark:border-border-gray-dark text-gray-900 dark:text-white placeholder-gray-400 rounded-md text-base focus:ring-1 focus:ring-primary focus:border-primary outline-none"
                 />
               </div>
               <div className="mb-4">
@@ -35,7 +35,7 @@ const Contact: React.FC<ContactProps> = ({ setActiveSection }) => {
                 <input 
                   type="email" 
                   placeholder="your.email@example.com" 
-                  className="w-full px-4 py-3 bg-white dark:bg-background-dark border border-primary/20 dark:border-border-gray-dark text-gray-900 dark:text-white placeholder-gray-400 rounded-md text-base focus:ring-1 focus:ring-primary focus:border-primary outline-none"
+                  className="w-full px-4 py-3 bg-white dark:bg-background-dark border border-gray-200 dark:border-border-gray-dark text-gray-900 dark:text-white placeholder-gray-400 rounded-md text-base focus:ring-1 focus:ring-primary focus:border-primary outline-none"
                 />
               </div>
               <div className="mb-4">
@@ -43,7 +43,7 @@ const Contact: React.FC<ContactProps> = ({ setActiveSection }) => {
                 <input 
                   type="text" 
                   placeholder="What is this about?" 
-                  className="w-full px-4 py-3 bg-white dark:bg-background-dark border border-primary/20 dark:border-border-gray-dark text-gray-900 dark:text-white placeholder-gray-400 rounded-md text-base focus:ring-1 focus:ring-primary focus:border-primary outline-none"
+                  className="w-full px-4 py-3 bg-white dark:bg-background-dark border border-gray-200 dark:border-border-gray-dark text-gray-900 dark:text-white placeholder-gray-400 rounded-md text-base focus:ring-1 focus:ring-primary focus:border-primary outline-none"
                 />
               </div>
               <div className="mb-6">
@@ -51,7 +51,7 @@ const Contact: React.FC<ContactProps> = ({ setActiveSection }) => {
                 <textarea 
                   placeholder="Tell me more..." 
                   rows={6}
-                  className="w-full px-4 py-3 bg-white dark:bg-background-dark border border-primary/20 dark:border-border-gray-dark text-gray-900 dark:text-white placeholder-gray-400 rounded-md text-base focus:ring-1 focus:ring-primary focus:border-primary outline-none"
+                  className="w-full px-4 py-3 bg-white dark:bg-background-dark border border-gray-200 dark:border-border-gray-dark text-gray-900 dark:text-white placeholder-gray-400 rounded-md text-base focus:ring-1 focus:ring-primary focus:border-primary outline-none"
                 ></textarea>
               </div>
               <button className="bg-secondary dark:bg-secondary-dark text-white border-none px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold rounded-lg cursor-pointer transition-all duration-300 hover:bg-pink-700 dark:hover:bg-pink-600 w-full shadow-md font-playfair">
@@ -62,7 +62,7 @@ const Contact: React.FC<ContactProps> = ({ setActiveSection }) => {
 
           {/* Contact Info */}
           <div>
-            <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-2xl p-8 mb-8 shadow-sm">
+            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-2xl p-8 mb-8 shadow-sm">
               <h2 className="text-2xl font-bold text-primary dark:text-primary-light mb-6">Direct Contact</h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
@@ -82,7 +82,7 @@ const Contact: React.FC<ContactProps> = ({ setActiveSection }) => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-light-gray to-white dark:from-light-gray-dark dark:to-surface-dark rounded-2xl p-8 text-center border border-primary/10">
+            <div className="bg-gradient-to-r from-light-gray to-white dark:from-light-gray-dark dark:to-surface-dark rounded-2xl p-8 text-center border border-gray-200">
               <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-4">Looking for Coaching?</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
                 Book a free discovery call to see if we're a good fit to work together.

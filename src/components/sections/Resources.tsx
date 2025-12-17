@@ -20,7 +20,7 @@ const Resources: React.FC<ResourcesProps> = ({ setActiveSection }) => {
         </p>
 
         {/* Featured Freebie */}
-        <div className="bg-gradient-to-r from-primary to-gray-800 dark:from-surface-dark dark:to-light-gray-dark text-white dark:text-primary-dark rounded-2xl p-12 mb-16 text-center shadow-lg">
+        <div className="bg-gradient-to-r from-gray-900 to-black dark:from-surface-dark dark:to-light-gray-dark text-white dark:text-primary-dark rounded-2xl p-12 mb-16 text-center shadow-lg">
           <div className="flex justify-center mb-4"><BookOpenIcon className="w-16 h-16" /></div>
           <h2 className="text-4xl font-bold mb-4">FREE Ebook: 5 Steps to Break Through Your Career Ceiling</h2>
           <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
@@ -35,7 +35,7 @@ const Resources: React.FC<ResourcesProps> = ({ setActiveSection }) => {
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-primary dark:text-primary-light mb-8">Free Resources</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
+            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
               <div className="flex justify-center mb-4"><ClipboardIcon className="w-10 h-10 text-secondary" /></div>
               <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-3">Personal Brand Checklist</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">A step-by-step guide to building your professional brand.</p>
@@ -44,7 +44,7 @@ const Resources: React.FC<ResourcesProps> = ({ setActiveSection }) => {
               </button>
             </div>
 
-            <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
+            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
               <div className="flex justify-center mb-4"><BriefcaseIcon className="w-10 h-10 text-secondary" /></div>
               <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-3">Leadership Skills Assessment</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">Identify your strengths and areas for growth as a leader.</p>
@@ -53,7 +53,7 @@ const Resources: React.FC<ResourcesProps> = ({ setActiveSection }) => {
               </button>
             </div>
 
-            <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
+            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
               <div className="flex justify-center mb-4"><ChartBarIcon className="w-10 h-10 text-secondary" /></div>
               <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-3">Career Planning Template</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">Map out your career goals with this comprehensive template.</p>
@@ -65,7 +65,7 @@ const Resources: React.FC<ResourcesProps> = ({ setActiveSection }) => {
         </div>
 
         {/* Future Book Section */}
-        <div className="bg-light-gray dark:bg-light-gray-dark rounded-2xl p-12 mb-16 text-center border border-primary/10">
+        <div className="bg-light-gray dark:bg-light-gray-dark rounded-2xl p-12 mb-16 text-center border border-gray-200">
           <div className="flex justify-center mb-4"><BookOpenIcon className="w-16 h-16 text-primary" /></div>
           <h2 className="text-3xl font-bold text-primary dark:text-primary-light mb-4">My Book (Coming Soon!)</h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-6">

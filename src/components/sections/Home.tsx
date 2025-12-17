@@ -39,7 +39,7 @@ const Home: React.FC<HomeProps> = ({ setActiveSection }) => {
         style={{ backgroundImage: `url('${heroImages[currentHeroIndex]}')` }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-primary/80 dark:bg-background-dark/80 mix-blend-multiply z-0 transition-all duration-1000"></div>
+        <div className="absolute inset-0 bg-black/60 dark:bg-black/70 mix-blend-multiply z-0 transition-all duration-1000"></div>
         
         <div className="relative z-10 max-w-container mx-auto px-8 md:px-16 text-center animate-fade-in pt-32 sm:pt-40">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight drop-shadow-lg">
@@ -91,7 +91,7 @@ const Home: React.FC<HomeProps> = ({ setActiveSection }) => {
           </div>
 
           {/* Freebie/Hook Section */}
-          <div className="bg-primary dark:bg-surface-dark text-white dark:text-primary-dark rounded-2xl p-6 sm:p-8 md:p-12 mb-16 md:mb-24 text-center animate-scale-in shadow-lg">
+          <div className="bg-gray-900 dark:bg-surface-dark text-white dark:text-primary-dark rounded-2xl p-6 sm:p-8 md:p-12 mb-16 md:mb-24 text-center animate-scale-in shadow-lg">
             <div className="flex justify-center mb-4">
               <GiftIcon className="w-12 h-12 text-secondary" />
             </div>
@@ -111,25 +111,25 @@ const Home: React.FC<HomeProps> = ({ setActiveSection }) => {
           <div className="mb-16 md:mb-24">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-primary dark:text-primary-light mb-8 md:mb-12 px-4">How I Can Help You</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-              <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-xl p-6 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:-translate-y-1 cursor-pointer group" onClick={() => setActiveSection('services')}>
+              <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-6 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:-translate-y-1 cursor-pointer group" onClick={() => setActiveSection('services')}>
                 <BriefcaseIcon className="w-10 h-10 mb-4 text-primary group-hover:text-secondary transition-colors duration-300" />
                 <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-2">Coaching & Mentorship</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">1:1 sessions to accelerate your growth and leadership.</p>
                 <span className="text-primary dark:text-primary-light font-semibold group-hover:text-secondary transition-colors">Learn More →</span>
               </div>
-              <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-xl p-6 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:-translate-y-1 cursor-pointer group" onClick={() => setActiveSection('services')}>
+              <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-6 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:-translate-y-1 cursor-pointer group" onClick={() => setActiveSection('services')}>
                 <MicrophoneIcon className="w-10 h-10 mb-4 text-primary group-hover:text-secondary transition-colors duration-300" />
                 <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-2">Speaking</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">Inspiring talks on tech, leadership, and growth.</p>
                 <span className="text-primary dark:text-primary-light font-semibold group-hover:text-secondary transition-colors">Learn More →</span>
               </div>
-              <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-xl p-6 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:-translate-y-1 cursor-pointer group" onClick={() => setActiveSection('services')}>
+              <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-6 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:-translate-y-1 cursor-pointer group" onClick={() => setActiveSection('services')}>
                 <UsersIcon className="w-10 h-10 mb-4 text-primary group-hover:text-secondary transition-colors duration-300" />
                 <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-2">Workshops</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">Group sessions and team training programs.</p>
                 <span className="text-primary dark:text-primary-light font-semibold group-hover:text-secondary transition-colors">Learn More →</span>
               </div>
-              <div className="bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark rounded-xl p-6 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:-translate-y-1 cursor-pointer group" onClick={() => setActiveSection('community')}>
+              <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-6 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:-translate-y-1 cursor-pointer group" onClick={() => setActiveSection('community')}>
                 <StarIcon className="w-10 h-10 mb-4 text-primary group-hover:text-secondary transition-colors duration-300" />
                 <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-2">Community</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">Join a supportive network of growth-minded professionals.</p>
@@ -139,7 +139,7 @@ const Home: React.FC<HomeProps> = ({ setActiveSection }) => {
           </div>
 
           {/* Newsletter Signup */}
-          <div className="bg-gradient-to-r from-light-gray to-white dark:from-light-gray-dark dark:to-surface-dark rounded-2xl p-6 sm:p-8 md:p-12 text-center border border-primary/10">
+          <div className="bg-gradient-to-r from-light-gray to-white dark:from-light-gray-dark dark:to-surface-dark rounded-2xl p-6 sm:p-8 md:p-12 text-center border border-gray-200">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary dark:text-primary-light mb-3 md:mb-4 px-4">
               Don't Limit Yourself — Join the Unlocked Growth Newsletter
             </h2>
