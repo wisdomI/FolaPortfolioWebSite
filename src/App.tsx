@@ -278,8 +278,8 @@ function App() {
 
             {/* Intro & Photo Section */}
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-16 animate-slide-up">
-              <div className="bg-light-gray dark:bg-light-gray-dark rounded-2xl h-64 md:h-96 flex items-center justify-center">
-                <p className="text-5xl md:text-6xl">👩🏾‍💼</p>
+              <div className="bg-light-gray dark:bg-light-gray-dark rounded-2xl h-64 md:h-96 flex items-center justify-center overflow-hidden">
+                <img src="/pictures/OGM07838.jpg" alt="Fola" className="w-full h-full object-cover" />
               </div>
               <div className="px-4">
                 <h2 className="text-2xl sm:text-3xl font-bold text-primary dark:text-primary-dark mb-4">Hi, I'm Fola</h2>
@@ -373,8 +373,8 @@ function App() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary dark:text-primary-dark mb-6 md:mb-8 text-center animate-fade-in px-4">About Fola</h1>
             
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-16">
-              <div className="bg-light-gray dark:bg-light-gray-dark rounded-2xl h-64 md:h-96 flex items-center justify-center">
-                <p className="text-6xl md:text-8xl">👩🏾‍💼</p>
+              <div className="bg-light-gray dark:bg-light-gray-dark rounded-2xl h-64 md:h-96 flex items-center justify-center overflow-hidden">
+                <img src="/pictures/OGM07796.jpg" alt="Fola Story" className="w-full h-full object-cover" />
               </div>
               <div className="flex flex-col justify-center px-4">
                 <h2 className="text-2xl sm:text-3xl font-bold text-primary dark:text-primary-dark mb-4 md:mb-6">My Story</h2>
@@ -412,15 +412,30 @@ function App() {
               </div>
             </div>
 
-            {/* Personal Touch */}
-            <div className="bg-light-gray dark:bg-light-gray-dark rounded-2xl p-6 sm:p-8 md:p-12 text-center">
-              <h2 className="text-2xl sm:text-3xl font-bold text-primary dark:text-primary-dark mb-4 md:mb-6 px-4">Beyond Work</h2>
-              <p className="text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mb-6">
-                When I'm not coaching or speaking, you'll find me baking (therapeutic and delicious!), reading about leadership psychology, or planning my next adventure. I believe balance and joy fuel our best work.
-              </p>
-              <p className="text-lg font-semibold text-primary dark:text-primary-dark">
-                Let's connect and unlock your growth together! 🚀
-              </p>
+            {/* Personal Touch & Gallery */}
+            <div className="mb-12 md:mb-16">
+              <div className="bg-light-gray dark:bg-light-gray-dark rounded-2xl p-6 sm:p-8 md:p-12 text-center mb-8">
+                <h2 className="text-2xl sm:text-3xl font-bold text-primary dark:text-primary-dark mb-4 md:mb-6 px-4">Beyond Work</h2>
+                <p className="text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mb-6">
+                  When I'm not coaching or speaking, you'll find me baking (therapeutic and delicious!), reading about leadership psychology, or planning my next adventure. I believe balance and joy fuel our best work.
+                </p>
+                <p className="text-lg font-semibold text-primary dark:text-primary-dark">
+                  Let's connect and unlock your growth together! 🚀
+                </p>
+              </div>
+              
+              {/* Photo Gallery */}
+              <div className="rounded-2xl overflow-hidden">
+                <h2 className="text-2xl sm:text-3xl font-bold text-primary dark:text-primary-dark mb-6 px-4">Moments from My Journey</h2>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <img src="/pictures/OGM07789.jpg" alt="Fola at event" className="rounded-lg h-64 w-full object-cover hover:shadow-lg transition-all duration-300 transform hover:scale-105" />
+                  <img src="/pictures/OGM07828.jpg" alt="Speaking moment" className="rounded-lg h-64 w-full object-cover hover:shadow-lg transition-all duration-300 transform hover:scale-105" />
+                  <img src="/pictures/OGM07913.jpg" alt="Leadership moment" className="rounded-lg h-64 w-full object-cover hover:shadow-lg transition-all duration-300 transform hover:scale-105" />
+                  <img src="/pictures/OGM07924.jpg" alt="Community building" className="rounded-lg h-64 w-full object-cover hover:shadow-lg transition-all duration-300 transform hover:scale-105" />
+                  <img src="/pictures/OGM07929.jpg" alt="Personal moment" className="rounded-lg h-64 w-full object-cover hover:shadow-lg transition-all duration-300 transform hover:scale-105" />
+                  <img src="/pictures/hs.jpg" alt="Fola portrait" className="rounded-lg h-64 w-full object-cover hover:shadow-lg transition-all duration-300 transform hover:scale-105" />
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -574,7 +589,7 @@ function App() {
             {/* Speaking Experience */}
             <div className="bg-white dark:bg-surface-dark border border-border-gray dark:border-border-gray-dark rounded-2xl p-12 mb-16">
               <h2 className="text-3xl font-bold text-primary dark:text-primary-dark mb-8 text-center">Speaking Experience</h2>
-              <div className="grid md:grid-cols-3 gap-8 text-center">
+              <div className="grid md:grid-cols-3 gap-8 text-center mb-8">
                 <div>
                   <p className="text-5xl font-bold text-primary dark:text-primary-dark mb-2">25+</p>
                   <p className="text-gray-600 dark:text-gray-300">Speaking Engagements</p>
@@ -587,6 +602,13 @@ function App() {
                   <p className="text-5xl font-bold text-primary dark:text-primary-dark mb-2">4.9/5</p>
                   <p className="text-gray-600 dark:text-gray-300">Average Rating</p>
                 </div>
+              </div>
+              {/* Speaking Photos */}
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <img src="/pictures/OGM07858.jpg" alt="Speaking at event" className="rounded-lg h-48 w-full object-cover hover:shadow-lg transition-all duration-300" />
+                <img src="/pictures/OGM07879.jpg" alt="Speaking engagement" className="rounded-lg h-48 w-full object-cover hover:shadow-lg transition-all duration-300" />
+                <img src="/pictures/OGM07880.jpg" alt="Conference speaking" className="rounded-lg h-48 w-full object-cover hover:shadow-lg transition-all duration-300" />
+                <img src="/pictures/OGM07881.jpg" alt="Public speaking" className="rounded-lg h-48 w-full object-cover hover:shadow-lg transition-all duration-300" />
               </div>
             </div>
 
