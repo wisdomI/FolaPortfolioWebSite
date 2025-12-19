@@ -83,7 +83,7 @@ const Home: React.FC<HomeProps> = ({ setActiveSection }) => {
               </p>
               <button 
                 onClick={() => setActiveSection('about')}
-                className="text-primary dark:text-primary-light font-semibold hover:text-secondary dark:hover:text-secondary-dark hover:underline transition-colors duration-300"
+                className="text-gray-700 dark:text-gray-300 font-semibold hover:text-secondary dark:hover:text-secondary-dark hover:underline transition-colors duration-300"
               >
                 Learn More About My Story →
               </button>
@@ -115,25 +115,25 @@ const Home: React.FC<HomeProps> = ({ setActiveSection }) => {
                 <BriefcaseIcon className="w-10 h-10 mb-4 text-primary group-hover:text-secondary transition-colors duration-300" />
                 <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-2">Coaching & Mentorship</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">1:1 sessions to accelerate your growth and leadership.</p>
-                <span className="text-primary dark:text-primary-light font-semibold group-hover:text-secondary transition-colors">Learn More →</span>
+                <span className="text-gray-700 dark:text-gray-300 font-semibold group-hover:text-secondary transition-colors">Learn More →</span>
               </div>
               <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-6 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:-translate-y-1 cursor-pointer group" onClick={() => setActiveSection('services')}>
                 <MicrophoneIcon className="w-10 h-10 mb-4 text-primary group-hover:text-secondary transition-colors duration-300" />
                 <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-2">Speaking</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">Inspiring talks on tech, leadership, and growth.</p>
-                <span className="text-primary dark:text-primary-light font-semibold group-hover:text-secondary transition-colors">Learn More →</span>
+                <span className="text-gray-700 dark:text-gray-300 font-semibold group-hover:text-secondary transition-colors">Learn More →</span>
               </div>
               <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-6 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:-translate-y-1 cursor-pointer group" onClick={() => setActiveSection('services')}>
                 <UsersIcon className="w-10 h-10 mb-4 text-primary group-hover:text-secondary transition-colors duration-300" />
                 <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-2">Workshops</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">Group sessions and team training programs.</p>
-                <span className="text-primary dark:text-primary-light font-semibold group-hover:text-secondary transition-colors">Learn More →</span>
+                <span className="text-gray-700 dark:text-gray-300 font-semibold group-hover:text-secondary transition-colors">Learn More →</span>
               </div>
               <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-6 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:-translate-y-1 cursor-pointer group" onClick={() => setActiveSection('community')}>
                 <StarIcon className="w-10 h-10 mb-4 text-primary group-hover:text-secondary transition-colors duration-300" />
                 <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-2">Community</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">Join a supportive network of growth-minded professionals.</p>
-                <span className="text-primary dark:text-primary-light font-semibold group-hover:text-secondary transition-colors">Learn More →</span>
+                <span className="text-gray-700 dark:text-gray-300 font-semibold group-hover:text-secondary transition-colors">Learn More →</span>
               </div>
             </div>
           </div>
@@ -164,4 +164,3 @@ const Home: React.FC<HomeProps> = ({ setActiveSection }) => {
 };
 
 export default Home;
-

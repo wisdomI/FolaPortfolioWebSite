@@ -14,7 +14,7 @@ const Community: React.FC = () => {
     <section className="pt-32 sm:pt-40 pb-16 px-8 md:px-16 bg-background dark:bg-background-dark min-h-screen w-full">
       <div className="max-w-container mx-auto w-full">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary dark:text-primary-light mb-4 md:mb-6 text-center animate-fade-in px-4">Join Our Community</h1>
-        <p className="text-xl text-accent dark:text-accent-dark text-center mb-12 max-w-3xl mx-auto">
+        <p className="text-xl text-gray-700 dark:text-gray-300 text-center mb-12 max-w-3xl mx-auto">
           A supportive space for women in tech & professionals unlocking growth — where we rise together.
         </p>
 
@@ -100,4 +100,3 @@ const Community: React.FC = () => {
 };
 
 export default Community;
-

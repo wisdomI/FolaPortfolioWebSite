@@ -12,7 +12,7 @@ const Newsletter: React.FC = () => {
     <section className="pt-32 sm:pt-40 pb-16 px-8 md:px-16 bg-background dark:bg-background-dark min-h-screen w-full">
       <div className="max-w-container mx-auto w-full">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary dark:text-primary-light mb-4 md:mb-6 text-center animate-fade-in px-4">Newsletter & Articles</h1>
-        <p className="text-xl text-accent dark:text-accent-dark text-center mb-12 max-w-3xl mx-auto">
+        <p className="text-xl text-gray-700 dark:text-gray-300 text-center mb-12 max-w-3xl mx-auto">
           Get weekly insights on growth, leadership, and tech — straight to your inbox.
         </p>
 
@@ -44,45 +44,45 @@ const Newsletter: React.FC = () => {
           <h2 className="text-3xl font-bold text-primary dark:text-primary-light mb-8">Recent Articles</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
-              <div className="text-sm text-accent dark:text-accent-dark mb-2">Jan 2025</div>
+              <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">Jan 2025</div>
               <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">Don't Limit Yourself: Breaking Through Career Ceilings</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Discover the 5 key strategies that helped hundreds of women in tech overcome barriers and accelerate their careers.
               </p>
-              <button className="text-primary dark:text-primary-light font-semibold hover:underline flex items-center gap-1">
+              <button className="text-gray-700 dark:text-gray-300 font-semibold hover:text-primary dark:hover:text-primary-light hover:underline flex items-center gap-1 transition-colors">
                 Read More <span className="text-xl">→</span>
               </button>
             </div>
 
             <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
-              <div className="text-sm text-accent dark:text-accent-dark mb-2">Dec 2024</div>
+              <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">Dec 2024</div>
               <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">The Confidence Code for Women in Tech</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 Practical tips for building unshakeable confidence in male-dominated spaces.
               </p>
-              <button className="text-primary dark:text-primary-light font-semibold hover:underline flex items-center gap-1">
+              <button className="text-gray-700 dark:text-gray-300 font-semibold hover:text-primary dark:hover:text-primary-light hover:underline flex items-center gap-1 transition-colors">
                 Read More <span className="text-xl">→</span>
               </button>
             </div>
 
             <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
-              <div className="text-sm text-accent dark:text-accent-dark mb-2">Nov 2024</div>
+              <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">Nov 2024</div>
               <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">Leadership Lessons from Imposter Syndrome</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 How to turn self-doubt into your greatest leadership asset.
               </p>
-              <button className="text-primary dark:text-primary-light font-semibold hover:underline flex items-center gap-1">
+              <button className="text-gray-700 dark:text-gray-300 font-semibold hover:text-primary dark:hover:text-primary-light hover:underline flex items-center gap-1 transition-colors">
                 Read More <span className="text-xl">→</span>
               </button>
             </div>
 
             <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
-              <div className="text-sm text-accent dark:text-accent-dark mb-2">Oct 2024</div>
+              <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">Oct 2024</div>
               <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">Personal Branding for Tech Professionals</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 A step-by-step guide to building a brand that opens doors.
               </p>
-              <button className="text-primary dark:text-primary-light font-semibold hover:underline flex items-center gap-1">
+              <button className="text-gray-700 dark:text-gray-300 font-semibold hover:text-primary dark:hover:text-primary-light hover:underline flex items-center gap-1 transition-colors">
                 Read More <span className="text-xl">→</span>
               </button>
             </div>
@@ -116,4 +116,3 @@ const Newsletter: React.FC = () => {
 };
 
 export default Newsletter;
-

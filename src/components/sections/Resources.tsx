@@ -15,7 +15,7 @@ const Resources: React.FC<ResourcesProps> = ({ setActiveSection }) => {
     <section className="pt-32 sm:pt-40 pb-16 px-8 md:px-16 bg-background dark:bg-background-dark min-h-screen w-full">
       <div className="max-w-container mx-auto w-full">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary dark:text-primary-light mb-4 md:mb-6 text-center animate-fade-in px-4">Resources & Freebies</h1>
-        <p className="text-xl text-accent dark:text-accent-dark text-center mb-12 max-w-3xl mx-auto">
+        <p className="text-xl text-gray-700 dark:text-gray-300 text-center mb-12 max-w-3xl mx-auto">
           Free guides, templates, and resources to help you unlock your growth potential.
         </p>
 
@@ -39,7 +39,7 @@ const Resources: React.FC<ResourcesProps> = ({ setActiveSection }) => {
               <div className="flex justify-center mb-4"><ClipboardIcon className="w-10 h-10 text-secondary" /></div>
               <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-3">Personal Brand Checklist</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">A step-by-step guide to building your professional brand.</p>
-              <button className="text-primary dark:text-primary-light font-semibold hover:underline flex items-center justify-center gap-1 w-full">
+              <button className="text-gray-700 dark:text-gray-300 font-semibold hover:text-primary dark:hover:text-primary-light hover:underline flex items-center justify-center gap-1 w-full transition-colors">
                 Download Free <span className="text-xl">→</span>
               </button>
             </div>
@@ -48,7 +48,7 @@ const Resources: React.FC<ResourcesProps> = ({ setActiveSection }) => {
               <div className="flex justify-center mb-4"><BriefcaseIcon className="w-10 h-10 text-secondary" /></div>
               <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-3">Leadership Skills Assessment</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">Identify your strengths and areas for growth as a leader.</p>
-              <button className="text-primary dark:text-primary-light font-semibold hover:underline flex items-center justify-center gap-1 w-full">
+              <button className="text-gray-700 dark:text-gray-300 font-semibold hover:text-primary dark:hover:text-primary-light hover:underline flex items-center justify-center gap-1 w-full transition-colors">
                 Take Assessment <span className="text-xl">→</span>
               </button>
             </div>
@@ -57,7 +57,7 @@ const Resources: React.FC<ResourcesProps> = ({ setActiveSection }) => {
               <div className="flex justify-center mb-4"><ChartBarIcon className="w-10 h-10 text-secondary" /></div>
               <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-3">Career Planning Template</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">Map out your career goals with this comprehensive template.</p>
-              <button className="text-primary dark:text-primary-light font-semibold hover:underline flex items-center justify-center gap-1 w-full">
+              <button className="text-gray-700 dark:text-gray-300 font-semibold hover:text-primary dark:hover:text-primary-light hover:underline flex items-center justify-center gap-1 w-full transition-colors">
                 Download Free <span className="text-xl">→</span>
               </button>
             </div>
@@ -102,4 +102,3 @@ const Resources: React.FC<ResourcesProps> = ({ setActiveSection }) => {
 };
 
 export default Resources;
-

@@ -65,7 +65,7 @@ const About: React.FC = () => {
           <p className="text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mb-6">
             When I'm not coaching or speaking, you'll find me baking (therapeutic and delicious!), reading about leadership psychology, or planning my next adventure. I believe balance and joy fuel our best work.
           </p>
-          <p className="text-lg font-semibold text-primary dark:text-primary-light flex items-center justify-center gap-2">
+          <p className="text-lg font-semibold text-gray-900 dark:text-white flex items-center justify-center gap-2">
             Let's connect and unlock your growth together! <RocketIcon className="w-6 h-6 text-secondary" />
           </p>
         </div>
@@ -100,4 +100,3 @@ const About: React.FC = () => {
 };
 
 export default About;
-

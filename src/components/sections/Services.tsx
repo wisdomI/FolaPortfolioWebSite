@@ -45,19 +45,19 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
     <section className="pt-32 sm:pt-40 pb-16 px-4 sm:px-8 md:px-16 bg-background dark:bg-background-dark min-h-screen w-full">
       <div className="max-w-container mx-auto w-full">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary dark:text-primary-light mb-4 md:mb-6 text-center animate-fade-in px-4">My Services</h1>
-        <p className="text-base sm:text-lg md:text-xl text-accent dark:text-accent-dark text-center mb-8 md:mb-12 max-w-3xl mx-auto px-4">
+        <p className="text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-300 text-center mb-8 md:mb-12 max-w-3xl mx-auto px-4">
           Transform your career through 1:1 coaching, inspiring speaking engagements, and powerful workshops designed for women in tech and ambitious professionals.
         </p>
 
         {/* Service Navigation */}
           <div className="flex justify-center gap-2 sm:gap-3 md:gap-4 mb-12 md:mb-16 flex-wrap px-4">
-          <a href="#coaching" className="px-4 sm:px-6 py-2 sm:py-3 bg-light-gray dark:bg-light-gray-dark text-primary dark:text-primary-light rounded-lg hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 font-semibold text-sm sm:text-base flex items-center gap-2 border border-gray-200 font-playfair">
+          <a href="#coaching" className="px-4 sm:px-6 py-2 sm:py-3 bg-light-gray dark:bg-light-gray-dark text-gray-700 dark:text-gray-200 rounded-lg hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 font-semibold text-sm sm:text-base flex items-center gap-2 border border-gray-200 font-playfair">
             <BriefcaseIcon className="w-5 h-5" /> Coaching
           </a>
-          <a href="#speaking" className="px-4 sm:px-6 py-2 sm:py-3 bg-light-gray dark:bg-light-gray-dark text-primary dark:text-primary-light rounded-lg hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 font-semibold text-sm sm:text-base flex items-center gap-2 border border-gray-200 font-playfair">
+          <a href="#speaking" className="px-4 sm:px-6 py-2 sm:py-3 bg-light-gray dark:bg-light-gray-dark text-gray-700 dark:text-gray-200 rounded-lg hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 font-semibold text-sm sm:text-base flex items-center gap-2 border border-gray-200 font-playfair">
             <MicrophoneIcon className="w-5 h-5" /> Speaking
           </a>
-          <a href="#workshops" className="px-4 sm:px-6 py-2 sm:py-3 bg-light-gray dark:bg-light-gray-dark text-primary dark:text-primary-light rounded-lg hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 font-semibold text-sm sm:text-base flex items-center gap-2 border border-gray-200 font-playfair">
+          <a href="#workshops" className="px-4 sm:px-6 py-2 sm:py-3 bg-light-gray dark:bg-light-gray-dark text-gray-700 dark:text-gray-200 rounded-lg hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 font-semibold text-sm sm:text-base flex items-center gap-2 border border-gray-200 font-playfair">
             <UsersIcon className="w-5 h-5" /> Workshops
           </a>
         </div>
@@ -67,7 +67,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary dark:text-primary-light mb-4 md:mb-6 text-center px-4 flex items-center justify-center gap-3">
             <BriefcaseIcon className="w-8 h-8 md:w-10 md:h-10 text-secondary" /> Coaching & Mentorship
           </h2>
-          <p className="text-base sm:text-lg text-accent dark:text-accent-dark text-center mb-8 md:mb-12 max-w-2xl mx-auto px-4">
+          <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 text-center mb-8 md:mb-12 max-w-2xl mx-auto px-4">
             Personalized 1:1 sessions to accelerate your growth and leadership.
           </p>
 
@@ -100,7 +100,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
           <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:-translate-y-1">
               <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">Single Session</h3>
-              <p className="text-4xl font-bold text-primary dark:text-primary-light mb-4">$250</p>
+              <p className="text-4xl font-bold text-gray-900 dark:text-white mb-4">$250</p>
               <p className="text-gray-600 dark:text-gray-300 mb-6">Perfect for specific challenges or quick guidance.</p>
               <ul className="list-none mb-8 space-y-2">
                 <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> 1-hour focused session</li>
@@ -117,7 +117,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
                 Most Popular
               </div>
               <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">3-Month Program</h3>
-              <p className="text-4xl font-bold text-primary dark:text-primary-light mb-4">$1,800</p>
+              <p className="text-4xl font-bold text-gray-900 dark:text-white mb-4">$1,800</p>
               <p className="text-gray-600 dark:text-gray-300 mb-6">Comprehensive transformation journey.</p>
               <ul className="list-none mb-8 space-y-2">
                 <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> 12 coaching sessions</li>
@@ -132,7 +132,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
 
             <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:-translate-y-1">
               <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">6-Month Program</h3>
-              <p className="text-4xl font-bold text-primary dark:text-primary-light mb-4">$3,200</p>
+              <p className="text-4xl font-bold text-gray-900 dark:text-white mb-4">$3,200</p>
               <p className="text-gray-600 dark:text-gray-300 mb-6">Deep transformation with lasting impact.</p>
               <ul className="list-none mb-8 space-y-2">
                 <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> 24 coaching sessions</li>
@@ -162,7 +162,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
           <h2 className="text-4xl font-bold text-primary dark:text-primary-light mb-6 text-center flex items-center justify-center gap-3">
             <MicrophoneIcon className="w-10 h-10 text-secondary" /> Speaking Engagements
           </h2>
-          <p className="text-lg text-accent dark:text-accent-dark text-center mb-12 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-700 dark:text-gray-300 text-center mb-12 max-w-2xl mx-auto">
             Inspiring talks on tech, leadership, and growth — helping audiences break barriers and unlock their potential.
           </p>
           
@@ -198,15 +198,15 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
           <h2 className="text-3xl font-bold text-primary dark:text-primary-light mb-8 text-center">Speaking Experience</h2>
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
-              <p className="text-5xl font-bold text-primary dark:text-primary-light mb-2">25+</p>
+              <p className="text-5xl font-bold text-gray-900 dark:text-white mb-2">25+</p>
               <p className="text-gray-600 dark:text-gray-300">Speaking Engagements</p>
             </div>
             <div>
-              <p className="text-5xl font-bold text-primary dark:text-primary-light mb-2">10K+</p>
+              <p className="text-5xl font-bold text-gray-900 dark:text-white mb-2">10K+</p>
               <p className="text-gray-600 dark:text-gray-300">Audience Reached</p>
             </div>
             <div>
-              <p className="text-5xl font-bold text-primary dark:text-primary-light mb-2">4.9/5</p>
+              <p className="text-5xl font-bold text-gray-900 dark:text-white mb-2">4.9/5</p>
               <p className="text-gray-600 dark:text-gray-300">Average Rating</p>
             </div>
           </div>
@@ -254,7 +254,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
           <h2 className="text-4xl font-bold text-primary dark:text-primary-light mb-6 text-center flex items-center justify-center gap-3">
             <UsersIcon className="w-10 h-10 text-secondary" /> Workshops & Group Training
           </h2>
-          <p className="text-lg text-accent dark:text-accent-dark text-center mb-12 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-700 dark:text-gray-300 text-center mb-12 max-w-2xl mx-auto">
             Interactive group sessions and team training programs designed to unlock collective growth.
           </p>
 
@@ -274,7 +274,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
                 <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Real-world case studies</li>
                 <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Actionable takeaways</li>
               </ul>
-              <p className="text-2xl font-bold text-primary dark:text-primary-light mb-4">$2,500 per session</p>
+              <p className="text-2xl font-bold text-gray-900 dark:text-white mb-4">$2,500 per session</p>
               <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">(up to 25 participants)</p>
               <button onClick={() => handleBooking('Leadership Fundamentals Workshop', '$2,500')} className="bg-secondary dark:bg-secondary-dark text-white border-none px-8 py-3 text-base font-semibold rounded-lg cursor-pointer transition-all duration-300 hover:bg-pink-700 dark:hover:bg-pink-600 w-full shadow-md font-playfair">
                 Book This Workshop
@@ -289,7 +289,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
                 <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> LinkedIn optimization</li>
                 <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Content strategy</li>
               </ul>
-              <p className="text-2xl font-bold text-primary dark:text-primary-light mb-4">$1,800 per session</p>
+              <p className="text-2xl font-bold text-gray-900 dark:text-white mb-4">$1,800 per session</p>
               <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">(up to 20 participants)</p>
               <button onClick={() => handleBooking('Personal Brand Workshop', '$1,800')} className="bg-secondary dark:bg-secondary-dark text-white border-none px-8 py-3 text-base font-semibold rounded-lg cursor-pointer transition-all duration-300 hover:bg-pink-700 dark:hover:bg-pink-600 w-full shadow-md font-playfair">
                 Book This Workshop
@@ -304,7 +304,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
                 <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Difficult conversations</li>
                 <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Executive presence</li>
               </ul>
-              <p className="text-2xl font-bold text-primary dark:text-primary-light mb-4">$3,500 per session</p>
+              <p className="text-2xl font-bold text-gray-900 dark:text-white mb-4">$3,500 per session</p>
               <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">(up to 30 participants)</p>
               <button onClick={() => handleBooking('Confidence & Communication Masterclass', '$3,500')} className="bg-secondary dark:bg-secondary-dark text-white border-none px-8 py-3 text-base font-semibold rounded-lg cursor-pointer transition-all duration-300 hover:bg-pink-700 dark:hover:bg-pink-600 w-full shadow-md font-playfair">
                 Book This Workshop
@@ -319,7 +319,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
                 <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Negotiation strategies</li>
                 <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Networking tactics</li>
               </ul>
-              <p className="text-2xl font-bold text-primary dark:text-primary-light mb-4">$2,200 per session</p>
+              <p className="text-2xl font-bold text-gray-900 dark:text-white mb-4">$2,200 per session</p>
               <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">(up to 25 participants)</p>
               <button onClick={() => handleBooking('Career Acceleration Workshop', '$2,200')} className="bg-secondary dark:bg-secondary-dark text-white border-none px-8 py-3 text-base font-semibold rounded-lg cursor-pointer transition-all duration-300 hover:bg-pink-700 dark:hover:bg-pink-600 w-full shadow-md font-playfair">
                 Book This Workshop
@@ -344,4 +344,3 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
 };
 
 export default Services;
-

@@ -13,7 +13,7 @@ const Contact: React.FC<ContactProps> = ({ setActiveSection }) => {
     <section className="pt-32 sm:pt-40 pb-16 px-8 md:px-16 bg-background dark:bg-background-dark min-h-screen w-full">
       <div className="max-w-container mx-auto w-full">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary dark:text-primary-light mb-4 md:mb-6 text-center animate-fade-in px-4">Get In Touch</h1>
-        <p className="text-xl text-accent dark:text-accent-dark text-center mb-12 max-w-3xl mx-auto">
+        <p className="text-xl text-gray-700 dark:text-gray-300 text-center mb-12 max-w-3xl mx-auto">
           Have questions? Want to work together? I'd love to hear from you!
         </p>
 
@@ -68,14 +68,14 @@ const Contact: React.FC<ContactProps> = ({ setActiveSection }) => {
                 <div className="flex items-start gap-4">
                   <div className="text-2xl"><EnvelopeIcon className="w-8 h-8 text-primary" /></div>
                   <div>
-                    <p className="font-semibold text-primary dark:text-primary-light">Email</p>
+                    <p className="font-semibold text-gray-900 dark:text-white">Email</p>
                     <p className="text-gray-600 dark:text-gray-300">hello@folacoaching.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="text-2xl"><BriefcaseIcon className="w-8 h-8 text-primary" /></div>
                   <div>
-                    <p className="font-semibold text-primary dark:text-primary-light">LinkedIn</p>
+                    <p className="font-semibold text-gray-900 dark:text-white">LinkedIn</p>
                     <p className="text-gray-600 dark:text-gray-300">linkedin.com/in/folashade</p>
                   </div>
                 </div>
@@ -102,4 +102,3 @@ const Contact: React.FC<ContactProps> = ({ setActiveSection }) => {
 };
 
 export default Contact;
-
