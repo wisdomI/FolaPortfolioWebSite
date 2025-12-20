@@ -35,7 +35,7 @@ const Home: React.FC<HomeProps> = ({ setActiveSection }) => {
   return (
     <>
       <section 
-        className="relative h-screen min-h-[600px] w-full flex items-center justify-center bg-cover bg-[50%_25%] bg-no-repeat bg-fixed transition-all duration-1000 ease-in-out"
+        className="relative h-screen min-h-[600px] w-full flex items-center justify-center bg-cover bg-[50%_25%] bg-no-repeat bg-scroll md:bg-fixed transition-all duration-1000 ease-in-out"
         style={{ backgroundImage: `url('${heroImages[currentHeroIndex]}')` }}
       >
         {/* Overlay */}
