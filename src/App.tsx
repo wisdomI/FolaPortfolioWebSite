@@ -17,6 +17,16 @@ function App() {
   const [isDarkMode, setIsDarkMode] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
+  const navItems = [
+    { id: 'home', label: 'Home' },
+    { id: 'about', label: 'About' },
+    { id: 'services', label: 'Skills' },
+    { id: 'newsletter', label: 'Insights' },
+    { id: 'community', label: 'Community' },
+    { id: 'resources', label: 'Certifications' },
+    { id: 'contact', label: 'Contact' },
+  ];
+
   // Check for saved theme preference or default to light mode
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme')
@@ -74,17 +84,17 @@ function App() {
           
           {/* Desktop Navigation */}
           <div className="hidden lg:flex gap-3 md:gap-6 items-center flex-wrap">
-            {['home', 'about', 'services', 'newsletter', 'community', 'resources', 'contact'].map((section) => (
+            {navItems.map((item) => (
               <button 
-                key={section}
-                onClick={() => setActiveSection(section)} 
+                key={item.id}
+                onClick={() => setActiveSection(item.id)} 
                 className={`text-sm font-medium cursor-pointer transition-all duration-300 py-2 border-b-2 animate-slide-down capitalize font-playfair ${
-                  activeSection === section 
+                  activeSection === item.id 
                     ? 'text-primary dark:text-primary-light font-bold border-primary dark:border-primary-light'
                     : 'text-gray-600 dark:text-gray-300 border-transparent hover:text-primary dark:hover:text-primary-dark hover:border-primary/30'
                 }`}
               >
-                {section}
+                {item.label}
               </button>
             ))}
             
@@ -148,17 +158,17 @@ function App() {
         {isMobileMenuOpen && (
           <div className="lg:hidden absolute top-full left-0 right-0 bg-white dark:bg-background-dark border-b border-primary/10 dark:border-white/10 shadow-lg animate-slide-down">
             <div className="flex flex-col px-8 py-4 space-y-2">
-              {['home', 'about', 'services', 'newsletter', 'community', 'resources', 'contact'].map((section) => (
+              {navItems.map((item) => (
                 <button 
-                  key={section}
-                  onClick={() => { setActiveSection(section); setIsMobileMenuOpen(false); }} 
+                  key={item.id}
+                  onClick={() => { setActiveSection(item.id); setIsMobileMenuOpen(false); }} 
                   className={`text-left text-base font-medium cursor-pointer transition-all duration-300 py-3 px-4 rounded-lg capitalize font-playfair ${
-                    activeSection === section 
+                    activeSection === item.id 
                       ? 'bg-primary/10 dark:bg-white/10 text-primary dark:text-primary-light font-bold'
                       : 'text-gray-600 dark:text-gray-300 hover:bg-primary/5 dark:hover:bg-white/5'
                   }`}
                 >
-                  {section}
+                  {item.label}
                 </button>
               ))}
             </div>
@@ -177,36 +187,36 @@ function App() {
             <div>
               <Image src="/logos/starrup.png" alt="FOLA" className="h-24 w-auto mb-4 object-contain brightness-0 invert" loading="lazy" />
               <p className="text-sm text-gray-300">
-                Empowering women in tech & professionals to unlock growth and break through barriers.
+                Building scalable cloud infrastructure and empowering the next generation of tech professionals.
               </p>
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2">
                 <li><button onClick={() => setActiveSection('about')} className="text-gray-300 hover:text-white transition-colors">About</button></li>
-                <li><button onClick={() => setActiveSection('services')} className="text-gray-300 hover:text-white transition-colors">Services</button></li>
-                <li><button onClick={() => setActiveSection('newsletter')} className="text-gray-300 hover:text-white transition-colors">Newsletter</button></li>
+                <li><button onClick={() => setActiveSection('services')} className="text-gray-300 hover:text-white transition-colors">Skills</button></li>
+                <li><button onClick={() => setActiveSection('newsletter')} className="text-gray-300 hover:text-white transition-colors">Insights</button></li>
                 <li><button onClick={() => setActiveSection('community')} className="text-gray-300 hover:text-white transition-colors">Community</button></li>
               </ul>
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-4">Resources</h4>
               <ul className="space-y-2">
-                <li><button onClick={() => setActiveSection('newsletter')} className="text-gray-300 hover:text-white transition-colors">Newsletter</button></li>
-                <li><button onClick={() => setActiveSection('resources')} className="text-gray-300 hover:text-white transition-colors">Free Resources</button></li>
-                <li><button onClick={() => setActiveSection('community')} className="text-gray-300 hover:text-white transition-colors">Community</button></li>
+                <li><button onClick={() => setActiveSection('newsletter')} className="text-gray-300 hover:text-white transition-colors">Tech Blog</button></li>
+                <li><button onClick={() => setActiveSection('resources')} className="text-gray-300 hover:text-white transition-colors">Certifications</button></li>
+                <li><button onClick={() => setActiveSection('community')} className="text-gray-300 hover:text-white transition-colors">Mentorship</button></li>
                 <li><button onClick={() => setActiveSection('contact')} className="text-gray-300 hover:text-white transition-colors">Contact</button></li>
               </ul>
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-4">Connect</h4>
-              <p className="text-sm text-gray-300 mb-2 flex items-center gap-2"><EnvelopeIcon className="w-4 h-4" /> hello@folacoaching.com</p>
-              <p className="text-sm text-gray-300 mb-2 flex items-center gap-2"><BriefcaseIcon className="w-4 h-4" /> LinkedIn: /in/folashade</p>
+              <p className="text-sm text-gray-300 mb-2 flex items-center gap-2"><EnvelopeIcon className="w-4 h-4" /> folashadeoluwaseun6@gmail.com</p>
+              <a href="https://www.linkedin.com/in/folashadeoluwaseun/" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-300 mb-2 flex items-center gap-2 hover:text-white transition-colors"><BriefcaseIcon className="w-4 h-4" /> LinkedIn: /in/folashadeoluwaseun</a>
             </div>
           </div>
           <div className="border-t border-gray-700 pt-6 text-center">
             <p className="text-sm text-gray-400">
-              © 2025 FOLA — Don't Limit Yourself. All rights reserved.
+              © 2025 Folashade. All rights reserved.
             </p>
           </div>
         </div>
