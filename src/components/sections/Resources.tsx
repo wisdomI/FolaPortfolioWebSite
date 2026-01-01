@@ -133,7 +133,7 @@ const Resources: React.FC<ResourcesProps> = ({ setActiveSection }) => {
           </p>
           <button 
             onClick={() => setActiveSection('contact')}
-            className="bg-primary dark:bg-primary-dark text-white dark:text-primary border-none px-8 py-4 text-base font-semibold rounded-lg cursor-pointer transition-all duration-300 hover:bg-gray-800 dark:hover:bg-gray-200 shadow-md font-playfair"
+            className="bg-secondary dark:bg-secondary-dark text-white border-none px-8 py-4 text-base font-semibold rounded-lg cursor-pointer transition-all duration-300 hover:bg-pink-700 dark:hover:bg-pink-600 shadow-md font-playfair"
           >
             Get In Touch
           </button>

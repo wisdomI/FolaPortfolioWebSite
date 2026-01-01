@@ -1,21 +1,9 @@
 import React from 'react';
 import { 
   EnvelopeIcon,
-  BriefcaseIcon,
-  CodeIcon // Assuming a CodeIcon exists or I need to find/add one for GitHub. I'll check Icons.tsx or use a generic one if not available.
+  LinkedinIcon,
+  GithubIcon
 } from '../Icons';
-
-// I need to check if CodeIcon exists. If not, I'll use another icon or just text.
-// Let's check Icons.tsx first.
-// I'll proceed assuming I can use a generic icon if CodeIcon isn't there, or I'll check Icons.tsx.
-// To be safe, I'll read Icons.tsx first. 
-// Wait, I can't read files in the middle of a thought process without a tool call.
-// I'll assume CodeIcon might not be there. I'll use BriefcaseIcon for now or just text if needed, 
-// but looking at previous files, I saw 'BriefcaseIcon', 'EnvelopeIcon'. 
-// I'll use 'BriefcaseIcon' for LinkedIn and maybe 'EnvelopeIcon' for Email. 
-// For GitHub, I might need to check. 
-// I'll just use BriefcaseIcon for GitHub too if I can't check, or 'TargetIcon' from earlier.
-// Actually, I'll pause and check Icons.tsx to be sure.
 
 interface ContactProps {
   setActiveSection: (section: string) => void;
@@ -82,18 +70,18 @@ const Contact: React.FC<ContactProps> = ({ setActiveSection }) => {
                   <div className="text-2xl"><EnvelopeIcon className="w-8 h-8 text-primary" /></div>
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-white">Email</p>
-                    <a href="mailto:folashadeoluwaseun6@gmail.com" className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">folashadeoluwaseun6@gmail.com</a>
+                    <a href="mailto:hello@thestarrup.com" className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">hello@thestarrup.com</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="text-2xl"><BriefcaseIcon className="w-8 h-8 text-primary" /></div>
+                  <div className="text-2xl"><LinkedinIcon className="w-8 h-8 text-primary" /></div>
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-white">LinkedIn</p>
                     <a href="https://www.linkedin.com/in/folashadeoluwaseun/" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">linkedin.com/in/folashadeoluwaseun</a>
                   </div>
                 </div>
                  <div className="flex items-start gap-4">
-                  <div className="text-2xl"><BriefcaseIcon className="w-8 h-8 text-primary" /></div>
+                  <div className="text-2xl"><GithubIcon className="w-8 h-8 text-primary" /></div>
                   <div>
                     <p className="font-semibold text-gray-900 dark:text-white">GitHub</p>
                     <a href="https://github.com/Fola-git" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">github.com/Fola-git</a>
@@ -109,7 +97,7 @@ const Contact: React.FC<ContactProps> = ({ setActiveSection }) => {
               </p>
               <button 
                 onClick={() => setActiveSection('services')}
-                className="bg-primary dark:bg-primary-dark text-white dark:text-primary border-none px-8 py-3 text-base font-semibold rounded-lg cursor-pointer transition-all duration-300 hover:bg-gray-800 dark:hover:bg-gray-200 shadow-md font-playfair"
+                className="bg-secondary dark:bg-secondary-dark text-white border-none px-8 py-3 text-base font-semibold rounded-lg cursor-pointer transition-all duration-300 hover:bg-pink-700 dark:hover:bg-pink-600 shadow-md font-playfair"
               >
                 View Skills & Expertise
               </button>

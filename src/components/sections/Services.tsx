@@ -23,7 +23,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
           A snapshot of my technical capabilities and professional strengths in Cloud Engineering and DevOps.
         </p>
 
-        {/* Service Navigation - Retained for quick links or removed? Kept for category jumping */}
+        {/* Service Navigation */}
         <div className="flex justify-center gap-2 sm:gap-3 md:gap-4 mb-12 md:mb-16 flex-wrap px-4">
           <a href="#cloud" className="px-4 sm:px-6 py-2 sm:py-3 bg-light-gray dark:bg-light-gray-dark text-gray-700 dark:text-gray-200 rounded-lg hover:bg-primary dark:hover:bg-primary-dark hover:text-white dark:hover:text-primary transition-all duration-300 font-semibold text-sm sm:text-base flex items-center gap-2 border border-gray-200 font-playfair">
             <BriefcaseIcon className="w-5 h-5" /> Cloud
@@ -135,7 +135,7 @@ const Services: React.FC<ServicesProps> = ({ setActiveSection }) => {
           <div className="bg-gray-900 dark:bg-surface-dark text-white dark:text-primary-dark rounded-2xl p-12 text-center shadow-lg">
           <h2 className="text-3xl font-bold mb-4">Need DevOps Consulting?</h2>
           <p className="text-lg mb-6 opacity-90">I am available for collaborations, training sessions, and consulting projects.</p>
-          <button onClick={() => setActiveSection('contact')} className="bg-white dark:bg-primary text-primary dark:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 text-sm sm:text-base w-full sm:w-auto shadow-md font-playfair">
+          <button onClick={() => setActiveSection('contact')} className="bg-white text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 text-sm sm:text-base w-full sm:w-auto shadow-md font-playfair">
             Get in Touch
           </button>
         </div>

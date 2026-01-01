@@ -99,7 +99,7 @@ const Home: React.FC<HomeProps> = ({ setActiveSection }) => {
             </p>
             <button 
               onClick={() => setActiveSection('services')}
-              className="bg-white dark:bg-primary text-primary dark:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 text-sm sm:text-base w-full sm:w-auto shadow-md font-playfair"
+              className="bg-white text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 text-sm sm:text-base w-full sm:w-auto shadow-md font-playfair"
             >
               Explore My Technical Skills
             </button>

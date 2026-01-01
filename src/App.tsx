@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react'
 import Image from './components/Image'
 import { 
   BriefcaseIcon, 
-  EnvelopeIcon 
+  EnvelopeIcon,
+  LinkedinIcon
 } from './components/Icons'
 import Home from './components/sections/Home'
 import About from './components/sections/About'
@@ -180,8 +181,8 @@ function App() {
         {renderSection()}
       </main>
 
-      {/* FOOTER - CONSISTENTLY BLACK */}
-      <footer className="bg-gray-900 text-white py-12 mt-auto w-full max-w-full">
+      {/* FOOTER - Updated color to black */}
+      <footer className="bg-black text-white py-12 mt-auto w-full max-w-full">
         <div className="max-w-container mx-auto w-full px-8 md:px-16">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
@@ -210,8 +211,8 @@ function App() {
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-4">Connect</h4>
-              <p className="text-sm text-gray-300 mb-2 flex items-center gap-2"><EnvelopeIcon className="w-4 h-4" /> folashadeoluwaseun6@gmail.com</p>
-              <a href="https://www.linkedin.com/in/folashadeoluwaseun/" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-300 mb-2 flex items-center gap-2 hover:text-white transition-colors"><BriefcaseIcon className="w-4 h-4" /> LinkedIn: /in/folashadeoluwaseun</a>
+              <p className="text-sm text-gray-300 mb-2 flex items-center gap-2"><EnvelopeIcon className="w-4 h-4" /> hello@thestarrup.com</p>
+              <a href="https://www.linkedin.com/in/folashadeoluwaseun/" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-300 mb-2 flex items-center gap-2 hover:text-white transition-colors"><LinkedinIcon className="w-4 h-4" /> LinkedIn: /in/folashadeoluwaseun</a>
             </div>
           </div>
           <div className="border-t border-gray-700 pt-6 text-center">
