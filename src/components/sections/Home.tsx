@@ -4,8 +4,7 @@ import {
   MicrophoneIcon, 
   UsersIcon, 
   StarIcon, 
-  GiftIcon, 
-  EnvelopeIcon 
+  GiftIcon
 } from '../Icons';
 import Image from '../Image';
 
@@ -35,7 +34,7 @@ const Home: React.FC<HomeProps> = ({ setActiveSection }) => {
   return (
     <>
       <section 
-        className="relative h-screen min-h-[600px] w-full flex items-center justify-center bg-cover bg-[50%_25%] bg-no-repeat bg-scroll md:bg-fixed transition-all duration-1000 ease-in-out"
+        className="relative h-screen min-h-[600px] w-full flex items-center justify-center bg-cover bg-[center_top] bg-no-repeat bg-scroll md:bg-fixed transition-all duration-1000 ease-in-out"
         style={{ backgroundImage: `url('${heroImages[currentHeroIndex]}')` }}
       >
         {/* Overlay */}
@@ -71,7 +70,7 @@ const Home: React.FC<HomeProps> = ({ setActiveSection }) => {
           {/* Intro & Photo Section */}
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-16 md:mb-24 animate-slide-up">
             <div className="bg-light-gray dark:bg-light-gray-dark rounded-2xl h-64 md:h-96 flex items-center justify-center overflow-hidden shadow-xl border border-primary/10">
-              <Image src="/pictures/hs.jpg" alt="Fola" className="w-full h-full object-cover object-[50%_20%] hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <Image src="/pictures/hs.jpg" alt="Fola" className="w-full h-full object-cover object-[center_top] hover:scale-105 transition-transform duration-500" loading="lazy" />
             </div>
             <div className="px-4">
               <h2 className="text-2xl sm:text-3xl font-bold text-primary dark:text-primary-light mb-4">Hi, I'm Fola</h2>
