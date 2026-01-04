@@ -5,9 +5,7 @@ import {
   BookOpenIcon,
   SparklesIcon,
   CheckCircleIcon,
-  StarIcon,
-  TargetIcon,
-  LinkedinIcon
+  StarIcon
 } from '../Icons';
 import Image from '../Image';
 
@@ -15,9 +13,9 @@ const Community: React.FC = () => {
   return (
     <section className="pt-32 sm:pt-40 pb-16 px-8 md:px-16 bg-background dark:bg-background-dark min-h-screen w-full">
       <div className="max-w-container mx-auto w-full">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary dark:text-primary-light mb-4 md:mb-6 text-center animate-fade-in px-4">Giving Back to the Community</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary dark:text-primary-light mb-4 md:mb-6 text-center animate-fade-in px-4">Join Our Community</h1>
         <p className="text-xl text-gray-700 dark:text-gray-300 text-center mb-12 max-w-3xl mx-auto">
-          Empowering women and young girls to thrive in tech and leadership.
+          A supportive space for women in tech & professionals unlocking growth — where we rise together.
         </p>
 
         {/* Community Intro */}
@@ -26,92 +24,75 @@ const Community: React.FC = () => {
             <Image src="/pictures/OGM07879.jpg" alt="Community Background" className="w-full h-full object-cover object-center opacity-20" loading="lazy" />
             <div className="absolute inset-0 bg-black/80 dark:bg-surface-dark/90"></div>
           </div>
-          <div className="relative z-10 text-white">
-            <h2 className="text-3xl font-bold mb-6">A Purpose-Driven Journey</h2>
+          <div className="relative z-10">
+            <h2 className="text-3xl font-bold text-white mb-6">Why Join Our Community?</h2>
             <p className="text-lg text-gray-200 max-w-3xl mx-auto mb-8">
-              Over the years, I’ve dedicated myself to building inclusive communities, mentoring aspiring professionals, and creating opportunities that spark growth. Through volunteering, leadership, and advocacy, I’ve made intentional efforts to drive real impact.
+              You don't have to navigate your career journey alone. Our community is a safe space where ambitious women in tech and professionals connect, learn, and grow together.
             </p>
             <div className="grid md:grid-cols-3 gap-8 mb-8 text-white">
               <div>
                 <div className="flex justify-center mb-4"><HandshakeIcon className="w-12 h-12" /></div>
-                <h3 className="text-xl font-bold mb-2">Community Building</h3>
-                <p className="text-gray-300">Built and grew a tech community of over 1,000 women.</p>
+                <h3 className="text-xl font-bold mb-2">Peer Support</h3>
+                <p className="text-gray-300">Connect with like-minded professionals facing similar challenges.</p>
               </div>
               <div>
                 <div className="flex justify-center mb-4"><UsersIcon className="w-12 h-12" /></div>
-                <h3 className="text-xl font-bold mb-2">Leadership</h3>
-                <p className="text-gray-300">Led teams of passionate volunteers to execute high-impact events.</p>
+                <h3 className="text-xl font-bold mb-2">Monthly Meetups</h3>
+                <p className="text-gray-300">Virtual and in-person gatherings for networking and learning.</p>
               </div>
               <div>
-                <div className="flex justify-center mb-4"><TargetIcon className="w-12 h-12" /></div>
-                <h3 className="text-xl font-bold mb-2">Impact</h3>
-                <p className="text-gray-300">Secured over ₦2 Million in sponsorships for community initiatives.</p>
+                <div className="flex justify-center mb-4"><BookOpenIcon className="w-12 h-12" /></div>
+                <h3 className="text-xl font-bold mb-2">Exclusive Resources</h3>
+                <p className="text-gray-300">Access to templates, guides, and community-only content.</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Key Highlights */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-primary dark:text-primary-light mb-8 text-center">Key Highlights</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300">
-              <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4 flex items-center gap-2"><SparklesIcon className="w-6 h-6 text-secondary" /> STEM-a-Girl Program</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Coordinated the STEM-a-Girl Program across 5+ schools, impacting over 500 students.
-              </p>
-              <ul className="list-none space-y-2">
-                <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Inspiring young girls to explore STEM careers.</li>
-                <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Delivering engaging and practical sessions.</li>
-              </ul>
-            </div>
-
-            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300">
-              <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4 flex items-center gap-2"><StarIcon className="w-6 h-6 text-secondary" /> Awards & Recognition</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Recognized for consistent impact and dedication to community development.
-              </p>
-              <ul className="list-none space-y-2">
-                <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Awarded Chapter Excellence Lead.</li>
-                <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Featured on She Code Africa Wall of Fame (2023 & 2024).</li>
-              </ul>
-            </div>
+        {/* Community Options */}
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300">
+            <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4 flex items-center gap-2"><SparklesIcon className="w-6 h-6 text-secondary" /> Free Community (LinkedIn)</h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-6">
+              Follow me on LinkedIn for daily insights, discussions, and connection with our growing community of professionals.
+            </p>
+            <ul className="list-none mb-6 space-y-2">
+              <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Daily leadership tips</li>
+              <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Live Q&A sessions</li>
+              <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Networking opportunities</li>
+            </ul>
+            <button className="bg-secondary dark:bg-secondary-dark text-white border-none px-8 py-3 text-base font-semibold rounded-lg cursor-pointer transition-all duration-300 hover:bg-pink-700 dark:hover:bg-pink-600 w-full shadow-md font-playfair">
+              Follow on LinkedIn
+            </button>
           </div>
-        </div>
 
-        {/* Gallery Section */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-primary dark:text-primary-light mb-8 text-center">Community Moments</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-             {/* Using existing images as placeholders for community events since specific ones weren't provided as files, but contextually fitting ones */}
-            <div className="h-64 rounded-xl overflow-hidden shadow-lg group relative">
-              <Image src="/pictures/OGM07913.jpg" alt="Community Event" className="w-full h-full object-cover object-[50%_20%] group-hover:scale-110 transition-transform duration-500" loading="lazy" />
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
-                <p className="text-white font-semibold">Organizing Tech Events</p>
-              </div>
+          <div className="bg-white dark:bg-surface-dark border-2 border-primary dark:border-primary-dark rounded-xl p-8 relative shadow-lg">
+            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary dark:bg-primary-dark text-white dark:text-primary px-4 py-1 rounded-full text-sm font-semibold">
+              Coming Soon
             </div>
-            <div className="h-64 rounded-xl overflow-hidden shadow-lg group relative">
-              <Image src="/pictures/OGM07828.jpg" alt="Speaking" className="w-full h-full object-cover object-[50%_20%] group-hover:scale-110 transition-transform duration-500" loading="lazy" />
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
-                <p className="text-white font-semibold">Speaking at Summits</p>
-              </div>
-            </div>
-            <div className="h-64 rounded-xl overflow-hidden shadow-lg group relative">
-              <Image src="/pictures/OGM07879.jpg" alt="Mentorship" className="w-full h-full object-cover object-[50%_20%] group-hover:scale-110 transition-transform duration-500" loading="lazy" />
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
-                <p className="text-white font-semibold">Mentoring Sessions</p>
-              </div>
-            </div>
+            <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4 flex items-center gap-2"><StarIcon className="w-6 h-6 text-secondary" /> Premium Community</h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-6">
+              Join our exclusive membership for deeper connections, masterclasses, and personalized support.
+            </p>
+            <ul className="list-none mb-6 space-y-2">
+              <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Monthly group coaching</li>
+              <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Exclusive masterclasses</li>
+              <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Private Slack community</li>
+              <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Priority support</li>
+            </ul>
+            <button className="bg-gray-300 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border-none px-8 py-3 text-base font-semibold rounded-lg cursor-not-allowed w-full">
+              Join Waitlist
+            </button>
           </div>
         </div>
 
         {/* CTA */}
         <div className="bg-gray-900 dark:bg-surface-dark text-white dark:text-primary-dark rounded-2xl p-12 text-center shadow-lg">
-          <h2 className="text-3xl font-bold mb-4">Join the Movement</h2>
-          <p className="text-lg mb-6 opacity-90">Be part of a community that uplifts and empowers.</p>
-          <a href="https://www.linkedin.com/in/folashadeoluwaseun/" target="_blank" rel="noopener noreferrer" className="inline-block bg-white dark:bg-primary text-primary dark:text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 shadow-md font-playfair flex items-center justify-center gap-2 max-w-xs mx-auto">
-            <LinkedinIcon className="w-5 h-5" /> Connect with Me
-          </a>
+          <h2 className="text-3xl font-bold mb-4">Ready to Connect & Grow?</h2>
+          <p className="text-lg mb-6 opacity-90">Join our community and be part of something bigger.</p>
+          <button className="bg-white dark:bg-primary text-primary dark:text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 shadow-md font-playfair">
+            Connect with Us on LinkedIn
+          </button>
         </div>
       </div>
     </section>

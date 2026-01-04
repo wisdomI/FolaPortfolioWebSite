@@ -3,8 +3,7 @@ import {
   BookOpenIcon,
   ClipboardIcon,
   BriefcaseIcon,
-  CheckCircleIcon,
-  StarIcon
+  ChartBarIcon
 } from '../Icons';
 
 interface ResourcesProps {
@@ -15,127 +14,86 @@ const Resources: React.FC<ResourcesProps> = ({ setActiveSection }) => {
   return (
     <section className="pt-32 sm:pt-40 pb-16 px-8 md:px-16 bg-background dark:bg-background-dark min-h-screen w-full">
       <div className="max-w-container mx-auto w-full">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary dark:text-primary-light mb-4 md:mb-6 text-center animate-fade-in px-4">Certifications & Achievements</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary dark:text-primary-light mb-4 md:mb-6 text-center animate-fade-in px-4">Resources & Freebies</h1>
         <p className="text-xl text-gray-700 dark:text-gray-300 text-center mb-12 max-w-3xl mx-auto">
-          Industry-recognized credentials validating my expertise in cloud computing and DevOps.
+          Free guides, templates, and resources to help you unlock your growth potential.
         </p>
 
-        {/* Certifications Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16">
-          <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
-            <div className="flex justify-center mb-4"><StarIcon className="w-10 h-10 text-secondary" /></div>
-            <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-3 text-center">Kubernetes & Cloud Native Associate (KCNA)</h3>
-            <div className="text-center mt-4">
-              <a href="https://www.credly.com/badges/3631c0de-7b23-42c5-9a27-a1f17e0ccaaa/public_url" target="_blank" rel="noopener noreferrer" className="text-primary dark:text-primary-light font-semibold hover:underline">
-                Verify Credential →
-              </a>
-            </div>
-          </div>
+        {/* Featured Freebie */}
+        <div className="bg-gradient-to-r from-gray-900 to-black dark:from-surface-dark dark:to-light-gray-dark text-white dark:text-primary-dark rounded-2xl p-12 mb-16 text-center shadow-lg">
+          <div className="flex justify-center mb-4"><BookOpenIcon className="w-16 h-16" /></div>
+          <h2 className="text-4xl font-bold mb-4">FREE Ebook: 5 Steps to Break Through Your Career Ceiling</h2>
+          <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
+            Download this comprehensive guide packed with actionable strategies to accelerate your career growth and overcome barriers.
+          </p>
+          <button className="bg-white dark:bg-primary text-primary dark:text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 text-lg shadow-md font-playfair">
+            Download Free Ebook
+          </button>
+        </div>
 
-          <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
-            <div className="flex justify-center mb-4"><StarIcon className="w-10 h-10 text-secondary" /></div>
-            <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-3 text-center">Google Cloud Professional Cloud Architect</h3>
-            <div className="text-center mt-4">
-              <a href="https://www.credly.com/badges/34f8e53e-4fa9-4fd9-832b-aa713e156792/public_url" target="_blank" rel="noopener noreferrer" className="text-primary dark:text-primary-light font-semibold hover:underline">
-                Verify Credential →
-              </a>
+        {/* Other Resources */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-primary dark:text-primary-light mb-8">Free Resources</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
+              <div className="flex justify-center mb-4"><ClipboardIcon className="w-10 h-10 text-secondary" /></div>
+              <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-3">Personal Brand Checklist</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">A step-by-step guide to building your professional brand.</p>
+              <button className="text-gray-700 dark:text-gray-300 font-semibold hover:text-primary dark:hover:text-primary-light hover:underline flex items-center justify-center gap-1 w-full transition-colors">
+                Download Free <span className="text-xl">→</span>
+              </button>
             </div>
-          </div>
 
-          <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
-            <div className="flex justify-center mb-4"><StarIcon className="w-10 h-10 text-secondary" /></div>
-            <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-3 text-center">AWS Certified Solutions Architect Associate</h3>
-            <div className="text-center mt-4">
-               <a href="https://www.credly.com/badges/04d5c972-4f81-448e-a3d7-fa2887e708a0/public_url" target="_blank" rel="noopener noreferrer" className="text-primary dark:text-primary-light font-semibold hover:underline">
-                Verify Credential →
-              </a>
+            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
+              <div className="flex justify-center mb-4"><BriefcaseIcon className="w-10 h-10 text-secondary" /></div>
+              <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-3">Leadership Skills Assessment</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Identify your strengths and areas for growth as a leader.</p>
+              <button className="text-gray-700 dark:text-gray-300 font-semibold hover:text-primary dark:hover:text-primary-light hover:underline flex items-center justify-center gap-1 w-full transition-colors">
+                Take Assessment <span className="text-xl">→</span>
+              </button>
             </div>
-          </div>
 
-          <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
-            <div className="flex justify-center mb-4"><StarIcon className="w-10 h-10 text-secondary" /></div>
-            <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-3 text-center">Azure Administrator Associate (AZ-104)</h3>
-            <div className="text-center mt-4">
-               <a href="https://learn.microsoft.com/api/credentials/share/en-us/Folashadeoroge/51637E73615BBF24?sharingId=FAC5040D72234A31" target="_blank" rel="noopener noreferrer" className="text-primary dark:text-primary-light font-semibold hover:underline">
-                Verify Credential →
-              </a>
-            </div>
-          </div>
-
-          <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
-            <div className="flex justify-center mb-4"><StarIcon className="w-10 h-10 text-secondary" /></div>
-            <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-3 text-center">Google Cloud Associate Cloud Engineer</h3>
-            <div className="text-center mt-4">
-               <a href="https://www.credly.com/badges/13dab8aa-293e-4398-94bd-28b750c7b5be/public_url" target="_blank" rel="noopener noreferrer" className="text-primary dark:text-primary-light font-semibold hover:underline">
-                Verify Credential →
-              </a>
-            </div>
-          </div>
-
-          <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
-            <div className="flex justify-center mb-4"><StarIcon className="w-10 h-10 text-secondary" /></div>
-            <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-3 text-center">GitHub Foundations</h3>
-            <div className="text-center mt-4">
-               <a href="https://www.credly.com/badges/ae4c6678-ae18-4c9c-9546-a9e7d3a009dc/public_url" target="_blank" rel="noopener noreferrer" className="text-primary dark:text-primary-light font-semibold hover:underline">
-                Verify Credential →
-              </a>
+            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
+              <div className="flex justify-center mb-4"><ChartBarIcon className="w-10 h-10 text-secondary" /></div>
+              <h3 className="text-xl font-bold text-primary dark:text-primary-light mb-3">Career Planning Template</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Map out your career goals with this comprehensive template.</p>
+              <button className="text-gray-700 dark:text-gray-300 font-semibold hover:text-primary dark:hover:text-primary-light hover:underline flex items-center justify-center gap-1 w-full transition-colors">
+                Download Free <span className="text-xl">→</span>
+              </button>
             </div>
           </div>
         </div>
 
-        {/* Trainings & Internships */}
-        <div className="bg-light-gray dark:bg-light-gray-dark rounded-2xl p-12 mb-16 border border-gray-200">
-          <h2 className="text-3xl font-bold text-primary dark:text-primary-light mb-8 text-center">Trainings & Internships</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="flex items-start gap-4">
-               <CheckCircleIcon className="w-6 h-6 text-secondary shrink-0 mt-1" />
-               <div>
-                 <h4 className="text-lg font-bold text-gray-900 dark:text-white">Cloud Engineering – ALX Africa</h4>
-                 <a href="https://drive.google.com/file/d/1iRIjDHRwf2mPJ6Q6mKCu9ukLuuP-dfnm/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-primary dark:text-primary-light text-sm hover:underline">View Certificate</a>
-               </div>
-            </div>
-            <div className="flex items-start gap-4">
-               <CheckCircleIcon className="w-6 h-6 text-secondary shrink-0 mt-1" />
-               <div>
-                 <h4 className="text-lg font-bold text-gray-900 dark:text-white">DevOps Internship – HNG Tech</h4>
-                 <a href="https://drive.google.com/file/d/1b1nr5TmS8nNkLp-IDqu6u34MULpsP8zq/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-primary dark:text-primary-light text-sm hover:underline">View Certificate</a>
-               </div>
-            </div>
-            <div className="flex items-start gap-4">
-               <CheckCircleIcon className="w-6 h-6 text-secondary shrink-0 mt-1" />
-               <div>
-                 <h4 className="text-lg font-bold text-gray-900 dark:text-white">Kubernetes & Cloud Native Essentials – The Linux Foundation</h4>
-                 <a href="https://drive.google.com/file/d/1_pHOgIEfRFga2qUiwCKaj0waK8SCbR2G/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-primary dark:text-primary-light text-sm hover:underline">View Certificate</a>
-               </div>
-            </div>
-            <div className="flex items-start gap-4">
-               <CheckCircleIcon className="w-6 h-6 text-secondary shrink-0 mt-1" />
-               <div>
-                 <h4 className="text-lg font-bold text-gray-900 dark:text-white">Azure Cloud Training – Flour Mills of Nigeria x New Horizons</h4>
-                 <a href="https://drive.google.com/file/d/1q3fXtVWPyINEeu6Dr7gEYP43TNkjAP3F/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="text-primary dark:text-primary-light text-sm hover:underline">View Certificate</a>
-               </div>
-            </div>
-            <div className="flex items-start gap-4">
-               <CheckCircleIcon className="w-6 h-6 text-secondary shrink-0 mt-1" />
-               <div>
-                 <h4 className="text-lg font-bold text-gray-900 dark:text-white">Linux Fundamentals Course – LinkedIn</h4>
-                 <a href="https://www.linkedin.com/learning/certificates/c1a03fe6cca4b9d491574002f58e64587ca72daa73a9272babe07c5840b20944" target="_blank" rel="noopener noreferrer" className="text-primary dark:text-primary-light text-sm hover:underline">View Certificate</a>
-               </div>
-            </div>
+        {/* Future Book Section */}
+        <div className="bg-light-gray dark:bg-light-gray-dark rounded-2xl p-12 mb-16 text-center border border-gray-200">
+          <div className="flex justify-center mb-4"><BookOpenIcon className="w-16 h-16 text-primary" /></div>
+          <h2 className="text-3xl font-bold text-primary dark:text-primary-light mb-4">My Book (Coming Soon!)</h2>
+          <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-6">
+            I'm working on a book about breaking through career barriers and unlocking your full potential. Be the first to know when it launches!
+          </p>
+          <div className="flex gap-2 max-w-md mx-auto">
+            <input 
+              type="email" 
+              placeholder="Enter your email for updates" 
+              className="flex-1 px-4 py-3 bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark text-gray-900 dark:text-white placeholder-gray-400 rounded-md text-base focus:border-primary focus:ring-1 focus:ring-primary outline-none"
+            />
+            <button className="bg-secondary dark:bg-secondary-dark text-white border-none px-6 py-3 rounded-lg font-semibold hover:bg-pink-700 dark:hover:bg-pink-600 transition-all duration-300 shadow-md font-playfair">
+              Notify Me
+            </button>
           </div>
         </div>
 
-        {/* Work With Me CTA */}
+        {/* Paid Sessions Link */}
         <div className="bg-white dark:bg-surface-dark border-2 border-primary dark:border-primary-dark rounded-2xl p-12 text-center shadow-lg">
-          <h2 className="text-3xl font-bold text-primary dark:text-primary-light mb-4">Ready to Collaborate?</h2>
+          <h2 className="text-3xl font-bold text-primary dark:text-primary-light mb-4">Ready for 1:1 Support?</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-            I'm open to discussing DevOps projects, cloud migrations, and training opportunities.
+            Book a coaching session for personalized guidance tailored to your goals.
           </p>
           <button 
-            onClick={() => setActiveSection('contact')}
-            className="bg-secondary dark:bg-secondary-dark text-white border-none px-8 py-4 text-base font-semibold rounded-lg cursor-pointer transition-all duration-300 hover:bg-pink-700 dark:hover:bg-pink-600 shadow-md font-playfair"
+            onClick={() => setActiveSection('services')}
+            className="bg-primary dark:bg-primary-dark text-white dark:text-primary border-none px-8 py-4 text-base font-semibold rounded-lg cursor-pointer transition-all duration-300 hover:bg-gray-800 dark:hover:bg-gray-200 shadow-md font-playfair"
           >
-            Get In Touch
+            View All Services
           </button>
         </div>
       </div>
