@@ -10,89 +10,117 @@ import {
 import Image from '../Image';
 
 const Community: React.FC = () => {
+  const highlights = [
+    {
+      text: "Built and Grew a Tech Community of over 1,000 women, fostering mentorship, collaboration, and skill development.",
+      image: "/pictures/OGM07879.jpg",
+      alt: "Tech Community Growth"
+    },
+    {
+      text: "Led a Team of passionate volunteers and organizers to plan, execute, and scale community-driven programs.",
+      image: "/pictures/OGM07789.jpg",
+      alt: "Leadership & Team Management"
+    },
+    {
+      text: "Secured Sponsorship Deals Worth Over ₦2 Million, enabling the execution of high-impact events and initiatives.",
+      image: "/pictures/OGM07881.jpg",
+      alt: "Sponsorship & Partnerships"
+    },
+    {
+      text: "Spoke at Industry Events and hosted panel sessions, sharing insights on cloud, tech careers, leadership, and community building.",
+      image: "/pictures/OGM07924.jpg",
+      alt: "Public Speaking"
+    },
+    {
+      text: "Organized and Hosted Events that brought together professionals and beginners to learn, network, and grow.",
+      image: "/pictures/OGM07858.jpg",
+      alt: "Event Hosting"
+    },
+    {
+      text: "Coordinated the STEM-a-Girl Program across 5+ schools, impacting over 500 students, and inspiring young girls to explore careers in STEM through engaging and practical sessions.",
+      image: "/pictures/OGM07828.jpg",
+      alt: "STEM Education Outreach"
+    },
+    {
+      text: "Awarded the Chapter Excellence Lead, recognizing my consistent impact, leadership, and dedication to community development.",
+      image: "/pictures/OGM07913.jpg",
+      alt: "Excellence Award"
+    }
+  ];
+
   return (
     <section className="pt-32 sm:pt-40 pb-16 px-8 md:px-16 bg-background dark:bg-background-dark min-h-screen w-full">
       <div className="max-w-container mx-auto w-full">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary dark:text-primary-light mb-4 md:mb-6 text-center animate-fade-in px-4">Join Our Community</h1>
-        <p className="text-xl text-gray-700 dark:text-gray-300 text-center mb-12 max-w-3xl mx-auto">
-          A supportive space for women in tech & professionals unlocking growth — where we rise together.
-        </p>
-
-        {/* Community Intro */}
-        <div className="relative bg-gray-900 dark:bg-surface-dark rounded-2xl p-12 mb-16 text-center overflow-hidden shadow-lg">
-          <div className="absolute inset-0 z-0">
-            <Image src="/pictures/OGM07879.jpg" alt="Community Background" className="w-full h-full object-cover object-center opacity-20" loading="lazy" />
-            <div className="absolute inset-0 bg-black/80 dark:bg-surface-dark/90"></div>
-          </div>
-          <div className="relative z-10">
-            <h2 className="text-3xl font-bold text-white mb-6">Why Join Our Community?</h2>
-            <p className="text-lg text-gray-200 max-w-3xl mx-auto mb-8">
-              You don't have to navigate your career journey alone. Our community is a safe space where ambitious women in tech and professionals connect, learn, and grow together.
-            </p>
-            <div className="grid md:grid-cols-3 gap-8 mb-8 text-white">
-              <div>
-                <div className="flex justify-center mb-4"><HandshakeIcon className="w-12 h-12" /></div>
-                <h3 className="text-xl font-bold mb-2">Peer Support</h3>
-                <p className="text-gray-300">Connect with like-minded professionals facing similar challenges.</p>
-              </div>
-              <div>
-                <div className="flex justify-center mb-4"><UsersIcon className="w-12 h-12" /></div>
-                <h3 className="text-xl font-bold mb-2">Monthly Meetups</h3>
-                <p className="text-gray-300">Virtual and in-person gatherings for networking and learning.</p>
-              </div>
-              <div>
-                <div className="flex justify-center mb-4"><BookOpenIcon className="w-12 h-12" /></div>
-                <h3 className="text-xl font-bold mb-2">Exclusive Resources</h3>
-                <p className="text-gray-300">Access to templates, guides, and community-only content.</p>
-              </div>
-            </div>
-          </div>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary dark:text-primary-light mb-8 md:mb-12 text-center animate-fade-in px-4">Giving Back To The Community</h1>
+        
+        {/* Intro Section */}
+        <div className="max-w-4xl mx-auto mb-16 text-center">
+          <p className="text-xl text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+            Giving back is more than a passion. It's a purpose I live out by empowering others, especially women and young girls, to thrive in tech and leadership.
+          </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
+            Over the years, I’ve dedicated myself to building inclusive communities, mentoring aspiring professionals, and creating opportunities that spark growth. Through volunteering, leadership, and advocacy, I’ve made intentional efforts to drive real impact.
+          </p>
         </div>
 
-        {/* Community Options */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300">
-            <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4 flex items-center gap-2"><SparklesIcon className="w-6 h-6 text-secondary" /> Free Community (LinkedIn)</h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Follow me on LinkedIn for daily insights, discussions, and connection with our growing community of professionals.
-            </p>
-            <ul className="list-none mb-6 space-y-2">
-              <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Daily leadership tips</li>
-              <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Live Q&A sessions</li>
-              <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Networking opportunities</li>
-            </ul>
-            <button className="bg-secondary dark:bg-secondary-dark text-white border-none px-8 py-3 text-base font-semibold rounded-lg cursor-pointer transition-all duration-300 hover:bg-pink-700 dark:hover:bg-pink-600 w-full shadow-md font-playfair">
-              Follow on LinkedIn
-            </button>
-          </div>
-
-          <div className="bg-white dark:bg-surface-dark border-2 border-primary dark:border-primary-dark rounded-xl p-8 relative shadow-lg">
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary dark:bg-primary-dark text-white dark:text-primary px-4 py-1 rounded-full text-sm font-semibold">
-              Coming Soon
+        {/* Key Highlights with Images */}
+        <div className="space-y-16 mb-24">
+          <h2 className="text-2xl sm:text-3xl font-bold text-primary dark:text-primary-light mb-12 text-center flex items-center justify-center gap-3">
+            <StarIcon className="w-8 h-8 text-secondary" />
+            Key Highlights of My Community Contributions
+          </h2>
+          
+          {highlights.map((item, index) => (
+            <div 
+              key={index} 
+              className={`flex flex-col md:flex-row items-center gap-8 md:gap-12 ${
+                index % 2 === 1 ? 'md:flex-row-reverse' : ''
+              }`}
+            >
+              <div className="w-full md:w-1/2">
+                <div className="bg-white dark:bg-surface-dark p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100 dark:border-white/5 h-full flex flex-col justify-center">
+                  <div className="flex items-start gap-4">
+                    <CheckCircleIcon className="w-8 h-8 text-secondary shrink-0 mt-1" />
+                    <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed font-medium">
+                      {item.text}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full md:w-1/2">
+                <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-xl group">
+                  <Image 
+                    src={item.image} 
+                    alt={item.alt} 
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy" 
+                  />
+                  <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300"></div>
+                </div>
+              </div>
             </div>
-            <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4 flex items-center gap-2"><StarIcon className="w-6 h-6 text-secondary" /> Premium Community</h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Join our exclusive membership for deeper connections, masterclasses, and personalized support.
-            </p>
-            <ul className="list-none mb-6 space-y-2">
-              <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Monthly group coaching</li>
-              <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Exclusive masterclasses</li>
-              <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Private Slack community</li>
-              <li className="text-gray-700 dark:text-gray-300 flex items-start gap-2"><CheckCircleIcon className="w-5 h-5 text-primary shrink-0" /> Priority support</li>
-            </ul>
-            <button className="bg-gray-300 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border-none px-8 py-3 text-base font-semibold rounded-lg cursor-not-allowed w-full">
-              Join Waitlist
-            </button>
-          </div>
+          ))}
+        </div>
+
+        {/* Closing Quote */}
+        <div className="text-center mb-16 bg-gray-50 dark:bg-white/5 p-8 md:p-12 rounded-2xl">
+          <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto italic font-playfair leading-relaxed">
+            "These achievements are more than milestones—they represent lives impacted, confidence built, and opportunities unlocked. The images in this section capture the stories, smiles, and success that define my journey of giving back."
+          </p>
         </div>
 
         {/* CTA */}
         <div className="bg-gray-900 dark:bg-surface-dark text-white dark:text-primary-dark rounded-2xl p-12 text-center shadow-lg">
           <h2 className="text-3xl font-bold mb-4">Ready to Connect & Grow?</h2>
           <p className="text-lg mb-6 opacity-90">Join our community and be part of something bigger.</p>
-          <button className="bg-white dark:bg-primary text-primary dark:text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 shadow-md font-playfair">
+          <a 
+            href="https://www.linkedin.com/in/folashadeoluwaseun/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block bg-white dark:bg-primary text-primary dark:text-white px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 shadow-md font-playfair"
+          >
             Connect with Us on LinkedIn
-          </button>
+          </a>
         </div>
       </div>
     </section>

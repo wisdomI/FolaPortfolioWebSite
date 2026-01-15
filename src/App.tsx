@@ -69,7 +69,13 @@ function App() {
       <nav className="fixed top-0 left-0 right-0 w-full bg-white/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-gray-200 dark:border-white/10 z-50 transition-all duration-300 shadow-sm">
         <div className="max-w-container mx-auto flex justify-between items-center px-8 md:px-16 w-full">
           <div className="nav-brand">
-            <Image src="/logos/starrup.png" alt="logo-image" className="h-24 w-auto object-contain animate-fade-in" loading="lazy" />
+            <button 
+              onClick={() => setActiveSection('home')} 
+              className="bg-transparent border-none p-0 cursor-pointer focus:outline-none"
+              aria-label="Go to Home"
+            >
+              <Image src="/logos/starrup.png" alt="logo-image" className="h-24 w-auto object-contain animate-fade-in" loading="lazy" />
+            </button>
           </div>
           
           {/* Desktop Navigation */}
@@ -201,7 +207,7 @@ function App() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Connect</h4>
               <p className="text-sm text-gray-300 mb-2 flex items-center gap-2"><EnvelopeIcon className="w-4 h-4" /> hello@folacoaching.com</p>
-              <p className="text-sm text-gray-300 mb-2 flex items-center gap-2"><BriefcaseIcon className="w-4 h-4" /> LinkedIn: /in/folashade</p>
+              <a href="https://www.linkedin.com/in/folashadeoluwaseun/" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-300 mb-2 flex items-center gap-2 hover:text-white transition-colors"><BriefcaseIcon className="w-4 h-4" /> LinkedIn: /in/folashade</a>
             </div>
           </div>
           <div className="border-t border-gray-700 pt-6 text-center">

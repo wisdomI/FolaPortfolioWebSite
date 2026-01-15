@@ -151,9 +151,14 @@ const Home: React.FC<HomeProps> = ({ setActiveSection }) => {
                 placeholder="Enter your email" 
                 className="flex-1 px-4 py-3 bg-white dark:bg-surface-dark border border-primary/20 dark:border-border-gray-dark text-gray-900 dark:text-white placeholder-gray-400 rounded-md text-sm sm:text-base focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
               />
-              <button className="bg-secondary dark:bg-secondary-dark text-white border-none px-6 sm:px-8 py-3 text-sm sm:text-base font-semibold rounded-lg cursor-pointer transition-all duration-300 hover:bg-pink-700 dark:hover:bg-pink-600 whitespace-nowrap shadow-md font-playfair">
+              <a 
+                href="https://www.linkedin.com/in/folashadeoluwaseun/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-secondary dark:bg-secondary-dark text-white border-none px-6 sm:px-8 py-3 text-sm sm:text-base font-semibold rounded-lg cursor-pointer transition-all duration-300 hover:bg-pink-700 dark:hover:bg-pink-600 whitespace-nowrap shadow-md font-playfair flex items-center justify-center"
+              >
                 Subscribe
-              </button>
+              </a>
             </div>
           </div>
         </div>

@@ -31,9 +31,14 @@ const Newsletter: React.FC = () => {
                 placeholder="Enter your email address" 
                 className="flex-1 px-4 py-3 bg-white/10 border border-white/30 text-white placeholder-gray-300 rounded-md text-base backdrop-blur-sm focus:bg-white/20 focus:border-white outline-none"
               />
-              <button className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 shadow-md font-playfair">
+              <a 
+                href="https://www.linkedin.com/in/folashadeoluwaseun/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 shadow-md font-playfair inline-block text-center"
+              >
                 Subscribe
-              </button>
+              </a>
             </div>
             <p className="text-sm opacity-75">✨ Free. No spam. Unsubscribe anytime.</p>
           </div>
@@ -44,47 +49,35 @@ const Newsletter: React.FC = () => {
           <h2 className="text-3xl font-bold text-primary dark:text-primary-light mb-8">Recent Articles</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
-              <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">Jan 2025</div>
-              <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">Don't Limit Yourself: Breaking Through Career Ceilings</h3>
+              <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">Latest</div>
+              <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">Explore My Latest Articles on LinkedIn</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Discover the 5 key strategies that helped hundreds of women in tech overcome barriers and accelerate their careers.
+                I regularly share insights on Cloud Engineering, DevOps, and empowering women in tech. Connect with me to stay updated.
               </p>
-              <button className="text-gray-700 dark:text-gray-300 font-semibold hover:text-primary dark:hover:text-primary-light hover:underline flex items-center gap-1 transition-colors">
-                Read More <span className="text-xl">→</span>
-              </button>
+              <a 
+                href="https://www.linkedin.com/in/folashadeoluwaseun/recent-activity/articles/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 dark:text-gray-300 font-semibold hover:text-primary dark:hover:text-primary-light hover:underline flex items-center gap-1 transition-colors"
+              >
+                Read on LinkedIn <span className="text-xl">→</span>
+              </a>
             </div>
 
             <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
-              <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">Dec 2024</div>
-              <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">The Confidence Code for Women in Tech</h3>
+              <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">Featured</div>
+              <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">Community & Mentorship</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Practical tips for building unshakeable confidence in male-dominated spaces.
+                Read about my journey in building tech communities and mentoring the next generation of engineers.
               </p>
-              <button className="text-gray-700 dark:text-gray-300 font-semibold hover:text-primary dark:hover:text-primary-light hover:underline flex items-center gap-1 transition-colors">
-                Read More <span className="text-xl">→</span>
-              </button>
-            </div>
-
-            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
-              <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">Nov 2024</div>
-              <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">Leadership Lessons from Imposter Syndrome</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                How to turn self-doubt into your greatest leadership asset.
-              </p>
-              <button className="text-gray-700 dark:text-gray-300 font-semibold hover:text-primary dark:hover:text-primary-light hover:underline flex items-center gap-1 transition-colors">
-                Read More <span className="text-xl">→</span>
-              </button>
-            </div>
-
-            <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-border-gray-dark rounded-xl p-8 hover:border-primary dark:hover:border-primary-dark transition-all duration-300 hover:shadow-md">
-              <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">Oct 2024</div>
-              <h3 className="text-2xl font-bold text-primary dark:text-primary-light mb-4">Personal Branding for Tech Professionals</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                A step-by-step guide to building a brand that opens doors.
-              </p>
-              <button className="text-gray-700 dark:text-gray-300 font-semibold hover:text-primary dark:hover:text-primary-light hover:underline flex items-center gap-1 transition-colors">
-                Read More <span className="text-xl">→</span>
-              </button>
+              <a 
+                href="https://www.linkedin.com/in/folashadeoluwaseun/recent-activity/articles/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 dark:text-gray-300 font-semibold hover:text-primary dark:hover:text-primary-light hover:underline flex items-center gap-1 transition-colors"
+              >
+                Read on LinkedIn <span className="text-xl">→</span>
+              </a>
             </div>
           </div>
         </div>
